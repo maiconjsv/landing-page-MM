@@ -1,0 +1,25 @@
+--------------------------------
+Requisitos do projeto
+--------------------------------
+
+Uma Landing Page responsiva, rápida e leve.
+
+Identidade nova pra empresa
+
+SEO básico
+
+Integração com o whatsapp
+
+Integração com o pixel(facebook ads)
+    Integrar o pixel ao botão do whatsapp, e a página em si.
+
+Hospedagem, dominio e email profissional
+
+    Custos
+        Desenvolvimento: R$800 reais
+        Domínio: R$ 40/ano pelo dominio.br, porque apesar da hostinger oferecer de graça por um ano o dominio, ele é pago após o primeiro ano
+        Hospedagem: 
+            R$ 23,99/mês - 287,88/anual pela hostinger 
+        email corporativo: R$ 5/mes a 20/mes na zoho
+
+total = 1147,88
