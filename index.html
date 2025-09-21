@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,39 +12,40 @@
     <div id="whatsapp_fixed">
         <a href="#" target="_blank" aria-label="Converse conosco no WhatsApp"><img src="src/img/WhatsApp.svg" alt=""></a>
     </div>
-    <!--Barra lateral-->
-    <nav id="sideBar_on">
-        <span class="material-symbols-outlined" id="closeDiv">close</span>
-        <div id="navDiv">
-            <ul>
-                <li><a href="#"><span class="material-symbols-outlined">home</span>Home</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">home_repair_service</span>Serviços</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">mail</span>Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-
+ 
     <!--cabeçalho e menu que vai acompanhar toda a página/header and menu that's follow the scrolling-->
     <header>
-        <div id="logoHeader">#LOGO AQUI#</div>
-        <div id="navHamburger"><span class="material-symbols-outlined" id="menuHamburger">menu</span></div>
+        <div id="logoHeader">
+            <img src="src/img/logo_header.png" alt="Logo da advocacia, Maciel e morais advogados">
+        </div>
+    <nav id="header_nav">
+            <div id="hd_nav">
+                <ul id="hd_nav_ul">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+    </nav>
+
     </header>
 
     <main><!--Conteúdo geral da LP-->
         <section id="introSection">
             <div id="textIntro">
-                <h1>Lorem Ipsum</h1>
+                <h1>Defendendo seus direitos...</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quaerat eos nobis eveniet modi, mollitia ducimus nemo nisi eius ex optio quidem? Ut eum fugit, nostrum unde accusantium sed quidem.</p>
             </div>
-            <div id="socialIntro">
+            <div id="box_empty">
                 <div id="imgIntro">
                     <!--REMOVIDO!<img src="" alt="" id="imgIntro">-->
                 </div>
-                <div id="socialLinks">
+               <!-- <div id="socialLinks">
                     <a href="#">link1</a>
                     <a href="#">link2</a>
                     <a href="#">link3</a>
                 </div>
+                -->
             </div>
         </section>
 
@@ -71,6 +72,29 @@
         <section id="duvidas_frequentes">
 
         </section>
+
+        <footer>
+
+        </footer>
     </main>
+
+
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1804091463634601');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1804091463634601&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
