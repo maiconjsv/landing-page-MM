@@ -53,8 +53,12 @@ header{
     position: fixed;
     top: 0;
     z-index: 9;
+    transition: all ease 0.8s;
 }
-
+    .hdS_on{
+        height: 60px;
+        transition: all ease 0.5s;
+    }
 
     #header_nav{
         background-color: rgb(142, 142, 170);
@@ -80,9 +84,15 @@ header{
             width: 100%;
             height: 100%;
         }
-            #hd_nav_ul li{
+            .list_nav{
                 margin-bottom: 6.5%;
+                transition: all ease 0.5s;
             }
+                .list_nav.nav_scrolled{
+                    margin-bottom: 2.6%;
+                    transition: all ease 0.5s;
+                }
+
                 #hd_nav_ul li a{
                     text-decoration: none;
                     color: #1D3557;
@@ -124,6 +134,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.253) 0px 3.5px 2px;
+    
 }
     #textIntro{
         width: 60%;
@@ -131,6 +142,7 @@ header{
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
+        flex-wrap: wrap;
     }
         #general_text{
             margin-top: 9.4%;
@@ -194,6 +206,7 @@ header{
     display: flex;
     flex-direction: column;
     height: 120vh;
+    align-items: center;
 }
     #text_solucoes{
         display: flex;
@@ -229,3 +242,124 @@ header{
                 font-size: 240%;
                 text-align: start;
             }*/
+
+
+    #solucoes_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+/*        align-items: center;*/
+        justify-content: space-between;
+        width: 85%;
+        margin-top: 5%;
+        
+    }
+        .solucao{
+            width: 30%;
+            height: 23rem;
+            margin: 3% 0% 0.2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+            #solucao_direito_trabalhista{
+                margin-top: 0;
+            }
+            #solucao_defesa_financeiras{
+                margin-top: 0;
+            }
+            #solucao_saude{
+                margin-top: 0;
+            }
+            .illust_solucao{
+                width: 90%;
+                height: 8rem;
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                position: relative;
+                z-index: 5;
+            }
+                #illust_trabalhista{
+                    background-image: url(../img/martelo-e-capacete-juiz-lei-e-justica-sobre-o-conceito-de-direito-trabalhista-lei-de-construcao-x9.jpg);
+    
+                }
+                #illust_financeiras{
+                    background-image: url(../img/mao-segurando-um-cartao-de-credito-ao-lado-de-um-atm.jpg);
+                }
+                #illust_saude{
+                    background-image: url(../img/medica-segurando-pulmoes-virtuais-na-mao-espaco-de-copia-de-orgao-humano-desenhado-a-mao-no-lado-direito-cores-de-fotos-cruas-conceito-de-servico-hospitalar-de-saude-foto-de-stock.jpg);
+                }
+                #illust_consumidor{
+                    background-image: url(../img/mulher-de-negocios-inicia-empresario-de-pequenas-empresas-pme-sucesso-mulher-freelance-trabalhando-em-casa-com-entrega-de-encomendas-line-sme-e-conceito-de-entrega-de-embalagens.jpg);
+                }
+                #illust_voos{
+                    background-image: url(../img/viajante-jovem-com-bagagem-segurando-passaporte-olhar-airplan.jpg);
+                }
+                #illust_inss{
+                    background-image: url(../img/casal-senior-indiano-asiatico-organizando-ou-empilhando-moedas-em-uma-fileira-foco-seletivo.jpg);
+                }
+            .icon_solucao{
+                position: absolute;
+                z-index: 7;
+                background-color: white;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                left: 8%;
+                top: 30%;
+                transform:translateY(-50%) ;
+                border: solid #D6A53D 0.3px;
+            }
+        .text_solucao_container{
+            border: #1D3557 solid 1.4px;
+            position: absolute;
+            bottom: 0;
+            z-index: 6;
+            background-color: white;
+            text-align: center;
+            height: 66%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+            .text_solucao_container p{
+                font-size: small;
+                color: #1D3557;
+                text-align: left;
+                margin: 5%;
+            }
+
+            .h3_solucao_text{
+                background-color: red;
+                width: 100%;
+                margin: 0;
+                color: #1D3557;
+                text-align: left;
+                margin: 0 ;
+                max-height: 100%;
+                
+            }
+                .h3_solucao_text h3{
+                    padding: 8%;
+                }
+                #h3_financ{
+                    padding: 5% 0 0 8%;
+                    background-color: red;
+                    width: 100%;
+                    margin: 0;
+                    color: #1D3557;
+                    text-align: left;
+                    margin: 0 ;
+                    max-height: 100%;
+                }
+
+            .p_solucao_text{
+                background-color: #28A745;
+                margin: 0;
+            }
+            

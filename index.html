@@ -17,16 +17,16 @@
     </div>
  
     <!--cabeçalho e menu que vai acompanhar toda a página/header and menu that's follow the scrolling-->
-    <header>
+    <header id="headerSite" class="hdS ">
         <div id="logoHeader">
             <img src="src/img/logo_header.png" alt="Logo da advocacia, Maciel e morais advogados">
         </div>
     <nav id="header_nav">
             <div id="hd_nav">
                 <ul id="hd_nav_ul">
-                    <li><a href="#"><strong>Inicio</strong></a></li>
-                    <li><a href="#"><strong>Serviços</strong></a></li>
-                    <li><a href="#"><strong>Contato</strong></a></li>
+                    <li id="hd_list_inicio" class="list_nav"><a href="#" ><strong>Inicio</strong></a></li>
+                    <li id="hd_list_servicos" class="list_nav"><a href="#" ><strong>Serviços</strong></a></li>
+                    <li id="hd_list_contato" class="list_nav"><a href="#" ><strong>Contato</strong></a></li>
                 </ul>
             </div>
     </nav>
@@ -61,10 +61,120 @@
                     <h1>Como podemos ajudar a resolver o seu problema</h1>
                 </div>
             </div>
+
+            <div id="solucoes_container">
+                <div class="solucao" id="solucao_direito_trabalhista">
+                    <div class="illust_solucao" id="illust_trabalhista"></div>
+                    <div class="icon_solucao" id="icon_solucao_trabalhista"><img src="src/img/mala.svg" alt="icone de mala"></div>
+                    <div class="text_solucao_container">
+                        <div class="h3_solucao_text">
+                            <h3>Direito Trabalhista</h3>
+                        </div>
+                        <div class="p_solucao_text">
+                            <p >Horas extras não pagas? Demissão injusta? Acidente de trabalho? Falta de registro na carteira? Você trabalhou e merece receber cada centavo. Analisamos seu caso para garantir que você receba todos seus direitos</p>
+                        </div>
+                        <div class="cta_solucao_text">
+                            <a href="#">
+                                <div class="cta_solucoes" id="cta_trabalhista">Analisar meu caso trabalhista <span class="material-symbols-outlined">arrow_right_alt</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solucao" id="solucao_defesa_financeiras">
+                    <div class="illust_solucao" id="illust_financeiras"></div>
+                    <div class="icon_solucao" id="icon_solucao_financeiras"><img src="src/img/cartao.svg" alt="icone de cartão de crédito"></div>
+                    <div class="text_solucao_container">
+                        <div class="" id="h3_financ">
+                            <h3>Defesa Contra Bancos e Financeiras</h3>
+                        </div>
+                        <div class="p_solucao_text">
+                            <p>Sofrendo com cobranças abusivas? Nome negativado por dívida que não é sua? Não deixe que os bancos tirem seu sono e seu dinheiro. Defendemos você contra ilegalidades, buscando a anulação de cobranças indevidas e a redução justa da sua dívida.</p>
+                        </div>
+                        <div class="cta_solucao_text">
+                            <a href="#">
+                                <div class="cta_solucoes" id="cta_financeiras">Defender meus direitos agora <span class="material-symbols-outlined">arrow_right_alt</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solucao" id="solucao_saude">
+                    <div class="illust_solucao" id="illust_saude"></div>
+                    <div class="icon_solucao" id="icon_solucao_saude"><img src="src/img/saude.svg" alt="icone de saude"></div>
+                    <div class="text_solucao_container">
+                        <div class="h3_solucao_text">
+                            <h3>Direito da Saúde</h3>
+                        </div>
+                        <div class="p_solucao_text">
+                            <p>Plano de saúde negou seu tratamento, cirurgia ou exame? A saúde não pode esperar. Atuamos com máxima urgência, buscando uma liminar na justiça para garantir a liberação do seu procedimento e proteger o seu direito à vida.</p>
+                        </div>
+                        <div class="cta_solucao_text">
+                            <a href="#">
+                                <div class="cta_solucoes" id="cta_saude">Entrar em contato urgente <span class="material-symbols-outlined">arrow_right_alt</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solucao" id="solucao_consumidor">
+                    <div class="illust_solucao" id="illust_consumidor"></div>
+                    <div class="icon_solucao" id="icon_solucao_consumidor"><img src="src/img/checkout.svg" alt="icone de checkin "></div>
+                    <div class="text_solucao_container">
+                        <div class="h3_solucao_text">
+                            <h3>Direito do Consumidor</h3>
+                        </div>
+                        <div class="p_solucao_text">
+                            <p>Produto com defeito, propaganda enganosa ou venda casada? Não aceite ser desrespeitado. Somos especialistas em fazer as empresas cumprirem a  lei, garantindo a reparação completa do seu dano.</p>
+                        </div>
+                        <div class="cta_solucao_text">
+                            <a href="#">
+                                <div class="cta_solucoes" id="cta_consumidor">Exigir meus direitos<span class="material-symbols-outlined">arrow_right_alt</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solucao" id="solucao_defesa_voos">
+                    <div class="illust_solucao" id="illust_voos"></div>
+                    <div class="icon_solucao" id="icon_solucao_voos"><img src="src/img/aviao.svg" alt="icone de avião"></div>
+                    <div class="text_solucao_container">
+                        <div class="h3_solucao_text">
+                            <h3>Problemas com Voo</h3>
+                        </div>
+                        <div class="p_solucao_text">
+                            <p>Voo atrasado ou cancelado? Overbooking ou bagagem extraviada? Saiba que essa situação pode gerar direito a uma indenização. Nós avaliamos o seu caso e atuamos para buscar a máxima reparação financeira pelo transtorno.</p>
+                        </div>
+                        <div class="cta_solucao_text">
+                            <a href="#">
+                                <div class="cta_solucoes" id="cta_voos">Buscar reparação<span class="material-symbols-outlined">arrow_right_alt</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solucao" id="solucao_inss">
+                    <div class="illust_solucao" id="illust_inss"></div>
+                    <div class="icon_solucao" id="icon_solucao_inss"> <img src="src/img/Group.svg" alt="icone de inss"></div>
+                    <div class="text_solucao_container">
+                        <div class="h3_solucao_text">
+                            <h3>Direito Previdenciário (INSS)</h3>
+                        </div>
+                        <div class="p_solucao_text">
+                            <p>Dificuldades com o INSS? Atuamos para garantir o BPC/LOAS, auxílio-doença, pensão por morte e todas as modalidades de aposentadoria. Realizamos um diagnóstico dos seus direitos para definir a melhor estratégia e conquistar seu benefício.</p>
+                        </div>
+                        <div class="cta_solucao_text">
+                            <a href="#">
+                                <div class="cta_solucoes" id="cta_inss">Verificar meu direito no INSS<span class="material-symbols-outlined">arrow_right_alt</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="advocacia_info">
-            <div><h1>Advocacia moderna, humana e focada em você</h1></div>
+            
         </section>
 
         <section id="sobre_nos">
@@ -99,5 +209,6 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1804091463634601&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+ <script src="src/js/index.js"></script>
 </body>
 </html>
