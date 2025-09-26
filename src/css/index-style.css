@@ -56,7 +56,7 @@ header{
     transition: all ease 0.8s;
 }
     .hdS_on{
-        height: 60px;
+        height: 45px;
         transition: all ease 0.5s;
     }
 
@@ -356,23 +356,38 @@ header{
                 height: 25%;
                 display: flex;
                 align-items: flex-end;
-                
+                border-bottom: solid #1d3557a8 0.8px;
             }
                 .h3_solucao_text h3{
                     margin-left: 5%;
+                    font-size: 160%;
                 }
-                #h3_financ{
-                    padding: 0 0 0 8%;
-                    
-                    width: 90%;
-                    margin: 0;
-                    color: #1D3557;
-                    text-align: left;
-                    margin: 0 ;
-                    height: 28%;
-                    display: flex;
-                    align-items: flex-end;
-                }
+                    #h3_s_t_inss{
+                        
+                        width: 90%;
+                        margin: 0;
+                        color: #1D3557;
+                        text-align: left;
+                        margin: 0 ;
+                        height: 28%;
+                        display: flex;
+                        align-items: flex-end;
+                        font-size: 115%;
+                        border-bottom: solid #1d3557a8 0.8px;
+                    }
+                    #h3_financ{
+                        padding: 0 0 0 8%;
+                        width: 90%;
+                        margin: 0;
+                        color: #1D3557;
+                        text-align: left;
+                        margin: 0 ;
+                        height: 28%;
+                        display: flex;
+                        align-items: flex-end;
+                        font-size: 110%;
+                        border-bottom: solid #1d3557a8 0.8px;
+                    }
 
             .p_solucao_text{
                 margin: 0;
@@ -397,7 +412,15 @@ header{
                     border-radius: 20px;
                     padding: 0 5% 0 5%;
                     border: solid #1D3557 0.7px;
+                    transition: all ease 0.6s;
+                    cursor: pointer;
                 }
+                    .cta_solucoes:hover{
+                        background-color: #1D3557;
+                        color: white;
+                        transition: all ease 0.5s;
+                    }
+
                     .link_cta{
                         text-decoration: none;
                         color: #1D3557;
@@ -408,6 +431,95 @@ header{
                     }
             
 
+/*seção de apresentação*/
+#advocacia_apresentacao{
+    display: flex;
+    flex-direction: row;
+    height: 105vh;
+    width: 100%;
+    background-color: #1D3557;
+}
+    #aprentacao_textos{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+        #tittle_apresentacao{
+            height: 30%;
+            /*margin-right: 5%;*/
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            color: white;
+        }
+            #tittle_apresentacao h2{
+                font-size: 2.6rem;
+                font-weight: 350;
+            }
+            #tittle_apresentacao h1{
+                font-size: 2.6rem;
+                font-weight: 700;
+                margin-bottom: 5%;
+            }
+
+        #apresentacao_txts{
+            width: 80%;
+            /*margin-right: 5%;*/
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 10%;
+        }
+             .txts_container{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                min-height: 20%;
+            }
+                .txt_textos{
+                    color: white;
+                    width: 73%;
+                    height: 100%;
+                    padding-left: 0.5%;
+                }
+                .txt_textos h3{
+                    font-size: 130%;
+
+                }
+                .txt_textos p{
+                    font-size: 130%;
+                    font-weight: 400;
+                }
+                .txt_icon{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+                    .txt_icon img{
+                        height: 50%;
+                    }
+                    #maos_img{
+                        height: 40%;
+                    }
+           
+
+
+
+    #apresentacao_imgs{
+        background-color: aqua;
+        width: 40%;
+        height: 100%;
+    }
+
 
 @media (max-width:1200px){
 
@@ -417,8 +529,13 @@ header{
     }
 }
 @media (max-width:768px){
+    main{
+        margin-top: 50px;
+    }
+    
     #whatsapp_fixed{
         width: 23%;
+        display: none;
     }
     
     #header_nav{
@@ -429,7 +546,41 @@ header{
         width: 90%;
         margin: 5% auto;
     }
+        .icon_solucao{
+            top: 23%;
+            height: 50px;
+            width: 50px;
+        }
 
+    #introSection{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+        #textIntro{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            #h1_gn{
+                line-height: 95%;
+            }
+            #p1_gn{
+                font-size: 110%;
+            }
+            .p_gn{
+                font-size: 100%;
+            }
+             #ctr_intro{
+                width: 90%;
+                align-self: center;
+                margin-top: 10%;
+            }
+        #figure_intro{
+            display: none;
+        }
 
 
     #solucoes_info{
@@ -440,5 +591,7 @@ header{
     #solucoes_h1{
         max-width: 100%;
         font-size: 1.1rem;
+        
     }
+   
 }
