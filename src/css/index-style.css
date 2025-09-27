@@ -512,13 +512,51 @@ header{
                     }
            
 
-
-
     #apresentacao_imgs{
-        background-color: aqua;
+        background-color: #1D3557;
         width: 40%;
         height: 100%;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }    
+        #imgs_apr{
+            width: 80%;
+            min-height: 80%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            column-gap: 3%;
+            row-gap: 5%;
+            
+        }
+            .img_apr{
+                min-width: 45%;
+                min-height: 29%;
+                height: auto;
+                border-radius: 10px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+                #img1{
+                    background-image: linear-gradient(to top, #1d355700 60%, #1D3557 90% ), url(../img/familiasorrinmd.jpg) ;
+                }
+                #img2{
+                    background-image: url(../img/martelo-juiz.jpg) ;
+                }
+                #img3{
+                    background-image: linear-gradient(to bottom, #1d355700 60%, #1D3557 90% ), url(../img/vista-anguo.jpg) ;
+                }
+                #img4{
+                    background-image: linear-gradient(to top, #1d355700 60%, #1D3557 90% ), url(../img/consuta-ref.jpg);
+                }
+                #img5{ background-image: url(../img/familia-divertida.jpg);}
+                #img6{ background-image: linear-gradient(to bottom, #1d355700 60%, #1D3557 90% ), url(../img/advogados.jpg);}
+        
 
 
 @media (max-width:1200px){
