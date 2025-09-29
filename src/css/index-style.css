@@ -560,8 +560,8 @@ header{
 
 #sobre_nos{
     width: 100%;
-    height: 132vh;
-    
+    min-height: 120vh;
+    height: 120vh;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.815) ) , url(../img/natureza-morta-com-balanca-da-justica.webp);
     background-position: center;
     background-size: cover;
@@ -618,12 +618,14 @@ header{
         align-items: center;
         justify-content: center;
         gap: 10%;
-        
+        flex-wrap: wrap;
     }
         .advs_cards{
             margin-top: -5%;
-            width: 24%;
+            width: auto;
+            min-width: 300px; 
             height: 65%;
+            max-height: 65%;
             border-radius: 25px;
             display: flex;
             align-items: flex-end;
@@ -675,7 +677,7 @@ header{
                         margin-left: 5%;
                     }
                     .txts_footer_advs h4{
-                        font-size: 145%;
+                        font-size: 125%;
                         margin-left: 5%;
                     }
                 .icon_footer_advs{
@@ -693,6 +695,24 @@ header{
                         transition: all ease 0.5s;
                     }
             
+
+#duvidas_frequentes{
+    background-color: white;
+    width: 75%;
+    height: 80vh;
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translate(-50%, -0%)
+}
+
+#contato_area{
+    background-color: #1D3557;
+    width: 100%;
+    height: 170vh;
+    position: relative;
+
+}
 
 @media (max-width:1200px){
 
@@ -766,5 +786,28 @@ header{
         font-size: 1.1rem;
         
     }
+
+
+
+    #imgs_section{
+        flex-direction: column;
+        gap: 8%;
+        margin-top: 0;
+    }
+    .advs_cards{
+        height: 40%;
+        max-height: 40%;
+    }
+        .info_footer_advgs{
+            height: 20%;
+        }
+        #advogado_foto-1{
+            background-position: 0% 25%;
+            background-size: 100%;
+        }
+        #advogado_foto-2{
+            background-position: 0% 25%;
+            background-size: 100%;
+        }
    
 }
