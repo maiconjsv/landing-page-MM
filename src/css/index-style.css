@@ -112,14 +112,13 @@ header{
         width: 60%;
         height: 100%;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: flex-start;
     }
         #logoHeader img{
-            height: 75%;
+            height: 72%;
             margin-left: 20%;
             cursor: pointer;
-            margin-bottom: 0.7%;
         }
 
 
@@ -578,12 +577,10 @@ header{
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 23%;
-        background-color: aqua;
+        height: 16%;
         margin-top: 0.6%;
     }
     #h1_sobreNos{
-        background-color: blueviolet;
         width: 100%;
         height: 90%;
         text-align: center;
@@ -591,6 +588,7 @@ header{
         #h1_sobreNos h2,h1{
             margin-top: 0.2%;
             font-size: 2.5rem;
+            color: #1D3557;
         }
         #h1_sobreNos h2{
             font-weight: 400;
@@ -699,20 +697,274 @@ header{
 #duvidas_frequentes{
     background-color: white;
     width: 75%;
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
     position: absolute;
     top: -4%;
     left: 50%;
-    transform: translate(-50%, -0%)
+    transform: translate(-50%, -10%);
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 10px 20px 10px;
+    border-radius: 20px;
+    z-index: 10;
 }
+    #duvidas_frequentes h3{
+        color: #1D3557;
+        margin-left: 6%;
+        font-size: 170%;
+    }
+    .duvida{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2% 1% 2% 1%;
+        gap: 5px;
+    }
+        
+            .pergunta {
+            background-color:white; 
+            color: #1D3557; 
+            cursor: pointer; 
+            padding: 18px;
+            width: 90%;
+            text-align: left;
+            border: solid #D6A53D 0.5px;
+            font-size: 16px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+            .pergunta-seta{
+                font-weight: 1000;
+            }
+            .resposta-painel{
+                color: rgb(82, 81, 81);
+                width: 90%;
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            }
+                .pergunta:hover, .pergunta.active { 
+                     background-color: #ddd;
+                }
+
+            
 
 #contato_area{
     background-color: #1D3557;
     width: 100%;
     height: 170vh;
     position: relative;
-
+    border-bottom: solid white 0.7px;
 }
+    #espaco-vital{
+        
+        width: 100%;
+        height: 50%;
+    }
+
+    #contact-section-final{
+        width: 100%;
+        
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact-section-texts{
+        color: white;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 5%;
+        
+    }
+        #contact-section-texts p{
+            margin: 3% 10% 0 5%;
+            font-weight: 600;
+        }
+            #h2-contact-section-1{
+                margin: 8% 0% 0 5%;
+                font-size: 190%;
+                font-weight: 500;
+            }
+            #h2-contact-section-2{
+                margin: -5% 0 0 5%;
+                font-size: 190%;
+            }
+            #redes-sociais{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+                #redes-sociais p{
+                    font-weight: 400;
+                }
+                #links-social{
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 1.4% 0 0 5%;
+                    gap: 6%;
+                }
+                    #facebook-link:hover{
+                        content: url(../img/Facebook.svg);
+                    }
+                    #instagram-link:hover{
+                        content: url(../img/Instagram.png);
+                    }
+                    #linkedin-link:hover{
+                        content: url(../img/LinkedIN.svg);
+                    }
+    #contact-section-form{
+        width: 40%;
+        height: 100%;
+
+        display: flex;
+    }
+        #layout-form{
+            background-color: white;
+            width: 80%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4%;
+            border-radius: 25px;
+        }
+            .input-container{
+                width: 80%;
+                height: 62%;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+            }
+                #inpt-ctn-msg{
+                    height: 10%;
+                }
+                .icon-form{
+                    position: absolute;
+                    top:20%;
+                    left: 2%;
+                    color: rgb(82, 81, 81);
+                }
+                .input-form{
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 10%;
+                    color: rgb(58, 58, 58);
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #D9D9D9;
+                }
+            #enviar-caso-btn{
+                width: 80%;
+                height: 10%;
+                border: none;
+                background-color: #D6A53D;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+footer{
+    background-color: #1D3557;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45vh;
+}
+    #footer-area{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 80%;
+        width: 100%;
+    }
+    #footer-nav{
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 22%;
+        margin-left: 10%;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5%;
+        color: white;
+    }
+        #footer-nav h4{
+            font-size: 180%;
+            color: #D6A53D;
+        }
+        #ul-footer{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-weight: 600;
+        }
+            #ul-footer li{
+                cursor: pointer;
+            }
+            #ul-footer li:hover{
+                color: grey;
+            }
+    #footer-contato{
+
+        display: flex;
+        flex-direction: column;
+        width: 22%;
+        height: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 6.7%;
+        
+    }
+        #footer-contato h4{
+            font-size: 180%;
+            color: #D6A53D;
+        }
+            #footer-contato a{
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+                font-size: 80%;
+            }
+    #footer-icon{
+        width: 46%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #footer-icon img{
+            width: 70%;
+        }
+    #footer-direitos{
+        border-top: solid white 0.6px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+            
 
 @media (max-width:1200px){
 
