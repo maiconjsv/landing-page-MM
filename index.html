@@ -41,17 +41,19 @@
             <div id="textIntro">
                 <div id="general_text">
                     <p class="text_white" id="p1_gn">Seus direitos foram desrespeitados?</p>
+                    <p class="text_white" id="p1_gn_mobile">Seus direitos <br>foram desrespeitados?</p>
                     <h1 class="text_white" id="h1_gn">Nós podemos te ajudar!</h1>
-                    <p class="text_white p_gn">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados</strong>, em Londrina.Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
-                    <p class="text_white p_gn">Atuamos com advocacia moderna, focada em questões trabalhistas, previdenciárias e de consumidor, como cobranças abusivas de bancos e negativas de planos de saúde.</p>
-                    <p class="text_white p_gn">Nossa equipe está disponível <strong style="color: #D6A53D;">24 horas por dia</strong>, com <br>atendimento ágil e humano, direto pelo <strong>WhatsApp</strong>.</p>
+                    <p class="text_white p_gn" id="p_gn_desktop">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados</strong>, em Londrina. <br>Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
+                    <p class="text_white p_gn" id="p_gn_mobile">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados</strong>, em Londrina. <br> <br>Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
+                    <p class="text_white p_gn" id="p-intro-media">Atuamos com advocacia moderna, focada em questões trabalhistas, previdenciárias e de consumidor, como cobranças abusivas de bancos e negativas de planos de saúde.</p>
+                    <p class="text_white p_gn" id="equipe-disponivel">Nossa equipe está disponível <strong style="color: #D6A53D;">24 horas por dia</strong>, com <br>atendimento ágil e humano, direto pelo <strong>WhatsApp</strong>.</p>
                     <div id="ctr_intro">
                         <img src="src/img/WhatsAppRecolor.png" alt="logo do whatsapp"><p class="text_white"><strong>Fale com um especialista</strong></p>
                     </div>
                 </div>
             </div>
             <div id="figure_intro">
-                <img src="src/img/public_justice_3 [Convertido].webp" alt="Imagem da justiça, com dois advogados em baixo.">
+                <img src="src/img/public_justice_3 [Convertido].webp" alt="Imagem da justiça, com dois advogados em baixo." id="img-justica">
             </div>
         </section>
 
@@ -61,7 +63,8 @@
                     Nossas soluções
                 </div>
                 <div id="solucoes_h1">
-                    <h1>Como podemos ajudar a resolver o seu problema</h1>
+                    <h1 id="h1-sol-desktop"><span class="como-podemos">Como podemos </span> <br>ajudar a resolver o seu problema</h1>
+                    <h1 id="h1-sol-mobile"><span class="como-podemos">Como podemos</span> <br>ajudar a resolver o seu problema</h1>
                 </div>
             </div>
 
@@ -297,9 +300,9 @@
                     <div id="redes-sociais">
                         <p>Também estamos nas redes sociais:</p>
                         <div id="links-social">
-                            <a href="#" target="_blank"><img src="src/img/Facebook_white.svg" alt="icone do facebook" id="facebook-link"></a>
-                            <a href="#" target="_blank"><img src="src/img/Instagram_white.svg" alt="icone do instagram" id="instagram-link"></a>
-                            <a href="#" target="_blank"><img src="src/img/LinkedIN_white.svg" alt=" icone do linkedin" id="linkedin-link"></a>
+                            <a href="#" target="_blank"><img src="src/img/Facebook_white.svg" alt="icone do facebook" class="facebook-link"></a>
+                            <a href="#" target="_blank"><img src="src/img/Instagram_white.svg" alt="icone do instagram" class="instagram-link"></a>
+                            <a href="#" target="_blank"><img src="src/img/LinkedIN_white.svg" alt=" icone do linkedin" class="linkedin-link"></a>
                         </div>
                     </div>
                 </div>
@@ -314,6 +317,14 @@
                                 <textarea name="mensagem" class="input-form" placeholder="Digite sua mensagem"></textarea>
                             </div>
                             <button id="enviar-caso-btn" type="submit">Enviar meu caso para análise</button>
+                        </div>
+                        <div id="redes-sociais-mobile">
+                            <p>Também estamos nas redes sociais:</p>
+                            <div id="links-social-mobile">
+                                <a href="#" target="_blank"><img src="src/img/Facebook_white.svg" alt="icone do facebook" class="facebook-link"></a>
+                                <a href="#" target="_blank"><img src="src/img/Instagram_white.svg" alt="icone do instagram" class="instagram-link"></a>
+                                <a href="#" target="_blank"><img src="src/img/LinkedIN_white.svg" alt=" icone do linkedin" class="linkedin-link"></a>
+                            </div>
                         </div>
                 </div>
             </section>
@@ -338,7 +349,9 @@
                 <div id="footer-icon">
                     <img src="src/img/logo-white.png" alt="logo da advocacia">
                 </div>
-
+                <div id="footer-icon-mobile">
+                    <img src="src/img/logo-white.png" alt="logo da advocacia">
+                </div>
             </div>
             <div id="footer-direitos">
                 <small>© 2025 Maciel e Morais Advogados . Todos os direitos reservados.</small>
