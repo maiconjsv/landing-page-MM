@@ -13,8 +13,31 @@
     <link rel="stylesheet" href="src/css/index-style.css">
 </head>
 <body>
-    <div id="whatsapp_fixed">
-        <a href="#" target="_blank" aria-label="Converse conosco no WhatsApp"><img src="src/img/WhatsApp.svg" alt=""></a>
+    <!--chat interativo-->
+    <div id="float_chat">
+        <div id="on_status_float_chat"></div>
+    </div>
+
+    <div id="chat_body">
+        <div id="header_chat">
+            <div id="img-1-chat"></div>
+            <h4>Maciel e Morais Advocacia</h4>
+            <div id="close_chat">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+        <div id="content_chat">
+            <div>
+                <p>Olá, tudo bem?</p>
+            </div>
+            <div>
+                <p>Quer falar agora com um <strong>Advogado</strong> pelo WhatsApp?</p>
+                <button><span>Sim, vamos lá!</span> <span class="material-symbols-outlined">arrow_right_alt</span></button>
+            </div>
+        </div>
+        <div id="aviso_chat">
+            <small>Ao clicar, você aceita nossa política de privacidade e autoriza o contato</small>
+        </div>
     </div>
  
     <!--cabeçalho e menu que vai acompanhar toda a página/header and menu that's follow the scrolling-->
@@ -233,26 +256,40 @@
             </div>
             <div id="imgs_section">
                 <div class="advs_cards">
-                    <div class="advogado_foto" id="advogado_foto-1"></div>
+                    <div class="advogado_foto" id="advogado_foto-1">
+                        <div class="advogado-info off">
+                             <h4>Pedro Maciel Filho</h4>
+                            <p class="adv-info-p1">Sócio fundador | OAB/PR 102.278</p>         
+                            <p class="adv-info-p2">Mestre em Direito Negocial (UEL) e Professor.É a linha de frente do  escritório, responsável por entender seu problema e garantir um atendimento ágil e que transmite segurança, transformando o 'juridiquês' em soluções claras para você.</p>
+                        </div>
+                    </div>
                      <div class="info_footer_advgs">
                         <div class="txts_footer_advs">
                             <h4>Pedro Maciel Filho</h4>
                             <p>Sócio fundador | OAB/PR 102.278</p>
                         </div>
                         <div class="icon_footer_advs">
-                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                            <span class="material-symbols-outlined seta-left-adv" id="seta-lado-1">arrow_forward_ios</span>
+                            <span class="material-symbols-outlined seta-adv off" id="seta-baixo-1">keyboard_arrow_down</span>
                         </div>
                     </div>
                 </div>
                 <div class="advs_cards">
-                    <div class="advogado_foto" id="advogado_foto-2"></div>
+                    <div class="advogado_foto" id="advogado_foto-2">
+                        <div class="advogado-info off">
+                            <h4>Pedro Maciel Filho</h4>
+                            <p class="adv-info-p1">Sócio fundador | OAB/PR 102.278</p>
+                            <p class="adv-info-p2">Especialista em Direito Corporativo e Processual. É o grande  estrategista, responsável pela execução jurídica do seu caso, elaborando as peças, atuando em audiências e garantindo que cada detalhe seja  cuidadosamente trabalhado para o sucesso da sua causa.</p>
+                        </div>
+                    </div>
                     <div class="info_footer_advgs">
                         <div class="txts_footer_advs">
                             <h4>Laércio de Morais</h4>
                             <p>Sócio fundador | OAB/PR 104.060</p>
                         </div>
                         <div class="icon_footer_advs">
-                            <span class="material-symbols-outlined" >arrow_forward_ios</span>
+                            <span class="material-symbols-outlined seta-left-adv" id="seta-lado-2">arrow_forward_ios</span>
+                            <span class="material-symbols-outlined seta-adv off" id="seta-baixo-2">keyboard_arrow_down</span>
                         </div>
                     </div>
                 </div>

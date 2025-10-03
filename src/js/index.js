@@ -24,28 +24,80 @@ window.addEventListener('scroll', () =>{
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    //Seleciona todos os botões de pergunta
     var botoesPergunta = document.querySelectorAll('.pergunta');
 
-    //Itera sobre cada botão para adicionar um 'ouvinte' de evento
     botoesPergunta.forEach(function(botao) {
         botao.addEventListener('click', function() {
-            //Adiciona/Remove a classe 'active' ao botão
             this.classList.toggle('active');
 
-            //Seleciona o painel de resposta que está logo após o botão
             var painel = this.nextElementSibling;
 
-            //Verifica se o painel está visível (se tem altura)
             if (painel.style.maxHeight) {
-                // Se estiver visível, esconde
                 painel.style.maxHeight = null;
                 painel.style.padding = '0 18px'; // Remove o padding para o fechamento
             } else {
-                // Se estiver escondido, mostra, definindo a altura para o tamanho real do conteúdo
                 painel.style.maxHeight = painel.scrollHeight + "px";
                 painel.style.padding = '10px 18px 20px 18px'; // Define o padding
             }
         });
     });
 });
+
+
+//Float chat
+
+
+
+
+
+//função do card dos advogados
+const botao_1 = document.getElementById('seta-lado-1')
+const botao_2 = document.getElementById('seta-lado-2')
+
+botao_1.addEventListener('click', () =>{
+   const adv_info_1 = document.querySelectorAll('.advogado-info')   
+   adv_info_1[0].classList.toggle('off')
+   const seta_right_1 = document.querySelectorAll('.seta-left-adv')
+   seta_right_1[0].classList.add('off')
+   const seta_cima_1 = document.querySelectorAll('.seta-adv')
+   seta_cima_1[0].classList.toggle('off')
+   const info_footer_advgs_1 = document.querySelectorAll('.info_footer_advgs')
+   info_footer_advgs_1[0].classList.toggle('off')
+   console.log(info_footer_advgs_1)
+})
+botao_2.addEventListener('click', () =>{
+   const adv_info_2 = document.querySelectorAll('.advogado-info')   
+   adv_info_2[1].classList.toggle('off')
+   const seta_right_2 = document.querySelectorAll('.seta-left-adv')
+   seta_right_2[1].classList.add('off')
+   const seta_cima_1 = document.querySelectorAll('.seta-adv')
+   seta_cima_1[1].classList.toggle('off')
+   const info_footer_advgs_1 = document.querySelectorAll('.info_footer_advgs')
+   info_footer_advgs_1[1].classList.toggle('off')
+   console.log(info_footer_advgs_1)
+})
+
+const seta_baixo_1 = document.getElementById('seta-baixo-1')
+const seta_baixo_2 = document.getElementById('seta-baixo-2')
+
+seta_baixo_1.addEventListener('click', () =>{
+   const adv_info_1 = document.querySelectorAll('.advogado-info')   
+   adv_info_1[0].classList.toggle('off')
+   const seta_right_1 = document.querySelectorAll('.seta-left-adv')
+   seta_right_1[0].classList.toggle('off')
+   const seta_cima_1 = document.querySelectorAll('.seta-adv')
+   seta_cima_1[0].classList.toggle('off')
+   const info_footer_advgs_1 = document.querySelectorAll('.info_footer_advgs')
+   info_footer_advgs_1[0].classList.toggle('off')
+})
+seta_baixo_2.addEventListener('click', () =>{
+   const adv_info_2 = document.querySelectorAll('.advogado-info')   
+   adv_info_2[1].classList.toggle('off')
+   const seta_right_2 = document.querySelectorAll('.seta-left-adv')
+   seta_right_2[1].classList.toggle('off')
+   const seta_cima_1 = document.querySelectorAll('.seta-adv')
+   seta_cima_1[1].classList.toggle('off')
+   const info_footer_advgs_1 = document.querySelectorAll('.info_footer_advgs')
+   info_footer_advgs_1[1].classList.toggle('off')
+   console.log(info_footer_advgs_1)
+})
