@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+
     <link rel="stylesheet" href="src/css/index-style.css">
+    <link rel="stylesheet" href="src/css/mobile.css">
+    <link rel="stylesheet" href="src/css/chat.css">
 </head>
 <body>
     <!--chat interativo-->
@@ -18,21 +21,28 @@
         <div id="on_status_float_chat"></div>
     </div>
 
-    <div id="chat_body">
+    <div id="chat_body" class="chat_lp chatOff">
         <div id="header_chat">
             <div id="img-1-chat"></div>
             <h4>Maciel e Morais Advocacia</h4>
             <div id="close_chat">
-                <span class="material-symbols-outlined">close</span>
+                <span class="material-symbols-outlined" id="fecharChat">close</span>
             </div>
         </div>
         <div id="content_chat">
-            <div>
+            <div id="mini-rosto-chat">
+                <div class="digitando">
+                    <div id="b-1"></div>
+                    <div id="b-2"></div>
+                    <div id="b-3"></div>
+                </div>
+            </div>
+            <div id="chat-message-1">
                 <p>Olá, tudo bem?</p>
             </div>
-            <div>
-                <p>Quer falar agora com um <strong>Advogado</strong> pelo WhatsApp?</p>
-                <button><span>Sim, vamos lá!</span> <span class="material-symbols-outlined">arrow_right_alt</span></button>
+            <div id="chat-message-2">
+                <p>Quer falar agora com <strong>um Advogado</strong> pelo WhatsApp?</p>
+                <button id="btn-chat"><span>Sim, vamos lá!</span> <span class="material-symbols-outlined">arrow_right_alt</span></button>
             </div>
         </div>
         <div id="aviso_chat">

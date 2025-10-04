@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (painel.style.maxHeight) {
                 painel.style.maxHeight = null;
-                painel.style.padding = '0 18px'; // Remove o padding para o fechamento
+                painel.style.padding = '0 18px'; 
             } else {
                 painel.style.maxHeight = painel.scrollHeight + "px";
-                painel.style.padding = '10px 18px 20px 18px'; // Define o padding
+                painel.style.padding = '10px 18px 20px 18px'; 
             }
         });
     });
@@ -45,6 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //Float chat
+const float_chat = document.getElementById('float_chat')
+const fecharChat = document.getElementById('fecharChat')
+const chat_lp = document.querySelector('.chat_lp')
+
+float_chat.addEventListener('click', () =>{
+    
+    chat_lp.classList.toggle('chatOff')
+})
+fecharChat.addEventListener('click', () =>{
+    chat_lp.classList.toggle('chatOff')
+})
 
 
 
