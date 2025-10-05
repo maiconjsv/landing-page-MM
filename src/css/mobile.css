@@ -301,11 +301,11 @@
         }
     
                     .txts_footer_advs p{
-                        font-size: 75%;
+                        font-size: 65%;
                         margin-left: 12%;
                     }
                     .txts_footer_advs h4{
-                        font-size: 125%;
+                        font-size: 105%;
                         margin-left: 12%;
                     }
                 .icon_footer_advs{
@@ -571,7 +571,7 @@
         
     }
         #footer-icon-mobile img{
-            width: 70%;
+            width: 220px;
         }
 
     #footer-direitos{

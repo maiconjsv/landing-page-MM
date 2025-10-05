@@ -228,3 +228,10 @@
         #aviso_chat small{
             font-size: 60%;
         }
+
+@media(max-width:768px){
+    .chat_lp{
+        height: 80vh;
+        width: 100vw;
+    }
+}
