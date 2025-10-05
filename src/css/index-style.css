@@ -148,9 +148,7 @@ header{
         #p_gn_mobile{
             display: none;
         }
-        #equipe-disponivel{
-            margin-top: 80px;
-        }
+
         #ctr_intro{
             display: flex;
             flex-direction: row;
@@ -192,7 +190,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 182vh;
+    min-height: 165vh;
     height: auto;
     align-items: center;
 }
@@ -425,8 +423,7 @@ header{
 #advocacia_apresentacao{
     display: flex;
     flex-direction: row;
-    min-height: 125vh;
-    height: 125vh;
+    height: 105vh;
     width: 100%;
     background-color: #1D3557;
 }
@@ -1027,3 +1024,373 @@ footer{
     }
             
 
+@media (max-width:1200px){
+        #introSection{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 50vh;
+    }
+        #textIntro{
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            #h1_gn{
+                line-height: 95%;
+                font-size: 160%;
+                margin-top: 1px;
+            }
+            #p1_gn{
+                display: none;
+            }
+            #p1_gn_mobile{
+                display: flex;
+                font-size: 110%;
+                font-weight: 340;
+            }
+            .p_gn{
+                font-size: 140%;
+            }
+            #p_gn_desktop{
+                display: none;
+            }
+            #p_gn_mobile{
+                display: block;
+               
+            }
+            #equipe-disponivel{
+                order: 1;
+                font-size: 140%;
+                justify-self: center;
+                text-align: center;
+            }
+            #p-intro-media{
+                display: none;
+            }
+             #ctr_intro{
+                width: 90%;
+                align-self: center;
+                margin-top: 10%;
+            }
+
+            #ctr_intro:hover{
+                width: 100%;
+                transition: all ease 0.5s;
+            }
+
+        #figure_intro{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+            #img-justica{
+                content: url(../img/Group\ 26.png);
+                
+            }
+
+    #solucoes_section{
+    min-height: 110vh;
+    
+}
+    .solucao{
+        width: 45%;
+    }
+             #apresentacao_txts{
+            width: 100%;
+            /*margin-right: 5%;*/
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 8%;
+        }
+                .txt_textos{
+                    color: white;
+                    width: 73%;
+                    height: 100%;
+                    margin-left: 3%;
+                }
+                .txt_textos h3{
+                    font-size: 183%;
+                    margin-bottom: 3px;
+
+                }
+                .txt_textos p{
+                    font-size: 165%;
+                    font-weight: 400;
+                }
+                .txt_icon{
+                    display: flex;
+                    width: 20%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 5%;
+                }
+                    .txt_icon img{
+                        height: 30%;
+                    }
+                    #maos_img{
+                        height: 30%;
+                    }
+
+
+
+
+                    
+                #img1{
+                    background-image: linear-gradient(to top, #1d355700 65%, #1D3557 90% ), url(../img/familiasorrinmd.jpg) ;
+                    width: 100%;
+                }
+                #img2{
+                    background-image: url(../img/martelo-juiz.jpg) ;
+                    width: 100%;
+                }
+                #img3{
+                    background-image:  url(../img/vista-anguo.jpg) ;
+                    width: 100%;
+                }
+                #img4{
+                    background-image: linear-gradient(to top, #1d355700 60%, #1D3557 90% ), url(../img/consuta-ref.jpg);
+                    display: none;
+                }
+
+                #img5{ 
+                    background-image: url(../img/familia-divertida.jpg);
+                    display: none;
+                }
+
+                #img6{ background-image: linear-gradient(to bottom, #1d355700 60%, #1D3557 90% ), url(../img/advogados.jpg);
+                width: 100%;
+                
+            }
+        
+
+    #apresentacao_imgs{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }    
+        #imgs_apr{
+            width: 80%;
+            min-height: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            column-gap: 1%;
+            row-gap: 3%;
+            
+        }
+            .img_apr{
+                min-width: 35%;
+                min-height: 16%;
+                height: auto;
+                border-radius: 10px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: 5%;
+            }
+            #imgs_section{
+        flex-direction: column;
+        gap: 8%;
+        margin-top: 0;
+    }
+    .advs_cards{
+        height: 40%;
+        max-height: 40%;
+        width: 70%;
+    }
+        .info_footer_advgs{
+            height: 28%;
+        }
+    
+                    .txts_footer_advs p{
+                        font-size: 125%;
+                        margin-left: 12%;
+                    }
+                    .txts_footer_advs h4{
+                        font-size: 185%;
+                        margin-left: 12%;
+                    }
+                .icon_footer_advs{
+                    width: 10%;
+                    margin-right: 3%;
+                }
+        #advogado_foto-1{
+            background-position: 0% 25%;
+            background-size: 100%;
+        }
+        #advogado_foto-2{
+            background-position: 0% 25%;
+            background-size: 100%;
+        }
+    #duvidas_frequentes{
+        min-height: 20vh;
+    }
+    #espaco-vital{
+        width: 100%;
+        height: 37%;
+    }
+    #contato_area{
+    background-color: #1D3557;
+    width: 100%;
+    height:100vh;
+    position: relative;
+    border-bottom: solid white 0.7px;
+}
+           #contact-section-final{
+            width: 100%;   
+            height: 60%;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+        }
+       #contact-section-texts{
+            color: white;
+            width: 90%;
+            height:16%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: flex-start;
+            gap: 7%;
+            margin-top: 0;
+        }
+        #contact-section-texts p{
+            display: none;
+        }
+            #h2-contact-section-1{
+                margin: 3% 0% 0 5%;
+                font-size: 190%;
+                font-weight: 420;
+                width: 60%;
+                align-self: center;
+            }
+            #h2-contact-section-2{
+                margin: -1% 0 0 1%;
+                font-size: 240%;
+                font-weight: 700;
+            }
+            #redes-sociais{
+                display: none;
+            }
+                #redes-sociais p{
+                    font-weight: 400;
+                }
+                #links-social{
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 1.4% 0 0 5%;
+                    gap: 6%;
+                }
+                    #facebook-link:hover{
+                        content: url(../img/Facebook.svg);
+                    }
+                    #instagram-link:hover{
+                        content: url(../img/Instagram.png);
+                    }
+                    #linkedin-link:hover{
+                        content: url(../img/LinkedIN.svg);
+                    }
+    #contact-section-form{
+        width: 80%;
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+        #layout-form{
+            background-color: white;
+            width: 73%;
+            height: 70%;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.26) 0px 3px 0px 0px;
+        }
+            .input-container{
+                width: 80%;
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                font-size: 180%;
+            }
+                #inpt-ctn-msg{
+                    height: 15%;
+                    font-size: 200%;
+                }
+                .icon-form{
+                    position: absolute;
+                    top:20%;
+                    left: 2.6%;
+                    color: rgb(82, 81, 81);
+                    font-size: 130%;
+                }
+                .input-form{
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 19%;
+                    color: rgb(58, 58, 58);
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #D9D9D9;
+                }
+            #enviar-caso-btn{
+                width: 80%;
+                height: 10%;
+                border: none;
+                background-color: #D6A53D;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        #redes-sociais-mobile{
+            display: flex;
+            flex-direction: column;
+            margin: 10% 0 0 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+            #links-social-mobile{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 4%;
+                margin-top: 10px;
+            }
+    
+    footer{
+    background-color: #1D3557;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 45vh;
+}
+    #footer-area{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 40%;
+        width: 100%;
+    }
+        
+
+    #footer-direitos{
+        min-height: 10%;
+    }
+        
+
+}
