@@ -48,14 +48,37 @@ document.addEventListener('DOMContentLoaded', function() {
 const float_chat = document.getElementById('float_chat')
 const fecharChat = document.getElementById('fecharChat')
 const chat_lp = document.querySelector('.chat_lp')
+const message_fade = document.querySelectorAll('.messages')
+const digitando = document.querySelector('.digitando')
 
-float_chat.addEventListener('click', () =>{
-    
+float_chat.addEventListener('click', () =>{    
     chat_lp.classList.toggle('chatOff')
+    setTimeout(() =>{
+        digitando.classList.toggle('digitandoOff')
+    },3800)
+    setTimeout(() =>{
+        message_fade[0].classList.toggle('msgOff')
+    }, 2000)
+    setTimeout(() =>{
+        message_fade[1].classList.toggle('msgOff')
+    }, 3200)
+
 })
 fecharChat.addEventListener('click', () =>{
-    chat_lp.classList.toggle('chatOff')
+    chat_lp.classList.toggle('chatOff') 
+    setTimeout(() =>{
+        digitando.classList.toggle('digitandoOff')
+    },3800)
+        setTimeout(() =>{
+        message_fade[0].classList.toggle('msgOff')
+    }, 1000)
+    setTimeout(() =>{
+        message_fade[1].classList.toggle('msgOff')
+    }, 1000)
 })
+
+//animação do chat
+
 
 
 

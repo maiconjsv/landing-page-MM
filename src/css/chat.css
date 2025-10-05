@@ -9,7 +9,7 @@
     background-position: center;
     background-size: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     right: 3%;
     bottom: 5%;
     border-radius: 50%;
@@ -51,7 +51,7 @@
     height: 370px;
     background-color: white;
     position: fixed;
-    z-index: 11;
+    z-index: 110;
     right: 8px;
     bottom: 0;
     display: flex;
@@ -106,6 +106,14 @@
         align-items: center;
         justify-content: center;
     }
+
+        .messages{
+            display: flex;
+            transition: all ease-out 0.5s;
+        }
+        .messages.msgOff{
+            opacity: 0;
+        }
         #chat-message-1{
             background-color: #D9D9D9;
             margin-top: 60px;
@@ -177,25 +185,35 @@
                 justify-content: center;
                 gap: 10%;
             }
+                .digitando.digitandoOff{
+                    display: none;
+                }
                 #b-1{
                     width: 3px;
                     height: 3px;
                     border-radius: 50%;
                     background-color: #BFBFBF;
+                    animation: b1 1.6s infinite ;
                 }
                 #b-2{
                     width: 3px;
                     height: 3px;
                     border-radius: 50%;
                     background-color: #BFBFBF;
+                    animation: b1 1.8s infinite ;
                 }
                 #b-3{
                     width: 3px;
                     height: 3px;
                     border-radius: 50%;
                     background-color: #BFBFBF;
+                    animation: b1 2s infinite ;
                 }
-
+                    @keyframes b1{
+                        0%{scale: 100%; background-color: #BFBFBF;}
+                        50%{scale: 150%; background-color: #120F17;}
+                        100%{scale: 100%;}
+                    }
 
     #aviso_chat{
         width: 100%;

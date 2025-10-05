@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/css/index-style.css">
     <link rel="stylesheet" href="src/css/mobile.css">
     <link rel="stylesheet" href="src/css/chat.css">
+    <link rel="stylesheet" href="src/css/tablets.css">
 </head>
 <body>
     <!--chat interativo-->
@@ -32,15 +33,15 @@
         <div id="content_chat">
             <div id="mini-rosto-chat">
                 <div class="digitando">
-                    <div id="b-1"></div>
-                    <div id="b-2"></div>
-                    <div id="b-3"></div>
+                    <div id="b-1" class="bs"></div>
+                    <div id="b-2" class="bs"></div>
+                    <div id="b-3" class="bs"></div>
                 </div>
             </div>
-            <div id="chat-message-1">
+            <div id="chat-message-1" class="messages msgOff">
                 <p>Olá, tudo bem?</p>
             </div>
-            <div id="chat-message-2">
+            <div id="chat-message-2" class="messages msgOff">
                 <p>Quer falar agora com <strong>um Advogado</strong> pelo WhatsApp?</p>
                 <button id="btn-chat"><span>Sim, vamos lá!</span> <span class="material-symbols-outlined">arrow_right_alt</span></button>
             </div>
@@ -78,7 +79,7 @@
                     <h1 class="text_white" id="h1_gn">Nós podemos te ajudar!</h1>
                     <p class="text_white p_gn" id="p_gn_desktop">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados</strong>, em Londrina. <br>Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
                     <p class="text_white p_gn" id="p_gn_mobile">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados</strong>, em Londrina. <br> <br>Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
-                    <p class="text_white p_gn" id="p-intro-media">Atuamos com advocacia moderna, focada em questões trabalhistas, previdenciárias e de consumidor, como cobranças abusivas de bancos e negativas de planos de saúde.</p>
+                   <!-- <p class="text_white p_gn" id="p-intro-media">Atuamos com advocacia moderna, focada em questões trabalhistas, previdenciárias e de consumidor, como cobranças abusivas de bancos e negativas de planos de saúde.</p>-->
                     <p class="text_white p_gn" id="equipe-disponivel">Nossa equipe está disponível <strong style="color: #D6A53D;">24 horas por dia</strong>, com <br>atendimento ágil e humano, direto pelo <strong>WhatsApp</strong>.</p>
                     <div id="ctr_intro">
                         <img src="src/img/WhatsAppRecolor.png" alt="logo do whatsapp"><p class="text_white"><strong>Fale com um especialista</strong></p>
@@ -420,6 +421,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1804091463634601');
 fbq('track', 'PageView');
+fbq('track', 'Lead');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1804091463634601&ev=PageView&noscript=1"
