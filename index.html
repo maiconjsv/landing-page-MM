@@ -66,7 +66,17 @@
                 </div>
                 <!--Colocar um icone de menu aqui!-->
         </nav>
-
+        <nav class="header_nav_mobile">
+            <div id="hd_nav_mobile" >
+                    <ul id="hd_nav_ul_mobile">
+                        <li id="hd_list_inicio_m" class="list_nav_m"><a href="#" ><strong>Inicio</strong></a></li>
+                        <li id="hd_list_servicos_m" class="list_nav_m"><a href="#" ><strong>Serviços</strong></a></li>
+                        <li id="hd_list_contato_m" class="list_nav_m"><a href="#" ><strong>Contato</strong></a></li>
+                    </ul>
+                </div>
+        </nav>
+        <span class="material-symbols-outlined menuMobile">menu</span>
+        <span class="material-symbols-outlined closeMenu" >close</span>              
 
     </header>
 
@@ -224,21 +234,21 @@
                         <div class="txt_icon"><img src="src/img/baloons.svg" alt="Icone de balões de conversa"></div>
                         <div class="txt_textos">
                             <h3>Atendimento imediato</h3>
-                            <p>Resolvemos tudo pelo WhatsApp de forma ágil e sem burocracia, para que você tenha acesso à justiça na palma da sua mão.</p>
+                            <p class="psz">Resolvemos tudo pelo WhatsApp de forma ágil e sem burocracia, para que você tenha acesso à justiça na palma da sua mão.</p>
                         </div>
                     </div>
                     <div class="txts_container">
                         <div class="txt_icon"><img src="src/img/cabeca.svg" alt="Icone de uma cabeça pensando"></div>
                         <div class="txt_textos">
                             <h3>Foco no problema</h3>
-                            <p>Aqui, você não é mais um número. Entendemos sua história e dedicamos nossa atenção total para encontrar a melhor solução para o seu caso.</p>
+                            <p class="psz">Aqui, você não é mais um número. Entendemos sua história e dedicamos nossa atenção total para encontrar a melhor solução para o seu caso.</p>
                         </div>
                     </div>
                     <div class="txts_container">
                         <div class="txt_icon"><img src="src/img/maos.svg" alt="Icone de duas mãos se apertando" id="maos_img"></div>
                         <div class="txt_textos">
                             <h3>Transparencia total</h3>
-                            <p>Explicamos cada passo do processo em uma linguagem clara e objetiva. Você sempre saberá o que está acontecendo com sua causa.</p>
+                            <p class="psz">Explicamos cada passo do processo em uma linguagem clara e objetiva. Você sempre saberá o que está acontecendo com sua causa.</p>
                         </div>
                     </div>
                 </div>
@@ -361,8 +371,8 @@
                                 <input type="text" class="input-form" placeholder="Nome" id="inpt-name" required>
                             </div>
                             <div class="input-container">
-                                <span class="material-symbols-outlined icon-form">drafts</span>
-                                <textarea name="mensagem" class="input-form" placeholder="Digite sua mensagem"></textarea>
+                                <span class="material-symbols-outlined icon-form" id="iconTxtArea">drafts</span>
+                                <textarea name="mensagem" class="input-form" placeholder="Digite sua mensagem" id="teextarea"></textarea>
                             </div>
                             <button id="enviar-caso-btn" type="submit">Enviar meu caso para análise</button>
                         </div>

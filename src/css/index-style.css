@@ -30,20 +30,28 @@ header{
     top: 0;
     z-index: 99;
     transition: all ease 0.8s;
+    align-items: center;
 }
     .hdS_on{
         height: 65px;
         transition: all ease 0.5s;
+    }
+    .menuMobile{
+        display: none;
+    }
+    .closeMenu{
+        display: none;
+    }
+    .header_nav_mobile{
+        display: none;
     }
 
     #header_nav{
         background-color: rgb(142, 142, 170);
         width: 40%;
         display: flex;
-        justify-content: flex-end;
-        
+        justify-content: flex-end; 
     }
-
     #hd_nav{
         width: 100%;
         height: 100%;
@@ -117,6 +125,7 @@ header{
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
+        margin-top: 50px;
        /* flex-wrap: wrap;*/
     }
         #general_text{
@@ -191,7 +200,7 @@ header{
     display: flex;
     flex-direction: column;
     min-height: 165vh;
-    height: auto;
+    padding-bottom: 40px;
     align-items: center;
 }
     #text_solucoes{
@@ -337,14 +346,13 @@ header{
 
             .h3_solucao_text{
                 width: 100%;
-                margin: 0;
                 color: #1D3557;
                 text-align: left;
-                margin: 0 ;
+                margin: 0 0 10px 0;
                 height: 25%;
                 display: flex;
                 align-items: flex-end;
-                border-bottom: solid #1d3557a8 0.8px;
+                /*border-bottom: solid #1d3557a8 0.8px;*/
             }
                 .h3_solucao_text h3{
                     margin-left: 5%;
@@ -356,31 +364,32 @@ header{
                         margin: 0;
                         color: #1D3557;
                         text-align: left;
-                        margin: 0 ;
+                        margin: 0 0 10px 0;
                         height: 28%;
                         display: flex;
                         align-items: flex-end;
-                        font-size: 115%;
-                        border-bottom: solid #1d3557a8 0.8px;
+                        font-size: 105%;
+                        /*border-bottom: solid #1d3557a8 0.8px;*/
                     }
                     #h3_financ{
                         padding: 0 0 0 8%;
-                        width: 90%;
-                        margin: 0;
+                        width: 100%;
+                        margin: 0 0 10px 0;
                         color: #1D3557;
                         text-align: left;
-                        margin: 0 ;
                         height: 28%;
                         display: flex;
                         align-items: flex-end;
-                        font-size: 110%;
-                        border-bottom: solid #1d3557a8 0.8px;
+                        font-size: 90%;
+                        
+                        /*border-bottom: solid #1d3557a8 0.8px;*/
                     }
 
             .p_solucao_text{
                 margin: 0;
                 min-height: 50%;
                 height: auto;
+                border-top: solid #1d3557a8 0.8px;
             }
 
             .cta_solucao_text{
@@ -420,12 +429,17 @@ header{
             
 
 /*seção de apresentação*/
+            
+
+
 #advocacia_apresentacao{
     display: flex;
     flex-direction: row;
-    height: 105vh;
+    height: 110vh;
     width: 100%;
     background-color: #1D3557;
+    padding-bottom: 20px;
+
 }
     #aprentacao_textos{
         width: 60%;
@@ -446,12 +460,12 @@ header{
             color: white;
         }
             #tittle_apresentacao h2{
-                font-size: 2.6rem;
+                font-size: 250%;
                 font-weight: 350;
                 color: white;
             }
             #tittle_apresentacao h1{
-                font-size: 2.6rem;
+                font-size: 250%;
                 font-weight: 700;
                 margin-bottom: 5%;
                 color: white;
@@ -481,7 +495,6 @@ header{
                 }
                 .txt_textos h3{
                     font-size: 130%;
-
                 }
                 .txt_textos p{
                     font-size: 130%;
@@ -926,6 +939,13 @@ header{
                     border: none;
                     background-color: #D9D9D9;
                 }
+                #teextarea{
+                    padding: 15px 0 0 36px;
+                    height: 80%;
+                }
+                #iconTxtArea{
+                    top: 5%;
+                }
             #enviar-caso-btn{
                 width: 80%;
                 height: 10%;
@@ -1097,6 +1117,18 @@ footer{
     .solucao{
         width: 45%;
     }
+
+    #tittle_apresentacao{
+        margin-top: 30px;
+    }
+            #tittle_apresentacao h1{
+                font-size: 130%;
+            }
+            #tittle_apresentacao h2{
+                font-size: 130%;
+            }
+
+
              #apresentacao_txts{
             width: 100%;
             /*margin-right: 5%;*/
@@ -1114,12 +1146,12 @@ footer{
                     margin-left: 3%;
                 }
                 .txt_textos h3{
-                    font-size: 183%;
+                    font-size: 103%;
                     margin-bottom: 3px;
-
+                    
                 }
                 .txt_textos p{
-                    font-size: 165%;
+                    font-size: 105%;
                     font-weight: 400;
                 }
                 .txt_icon{
@@ -1136,8 +1168,6 @@ footer{
                     #maos_img{
                         height: 30%;
                     }
-
-
 
 
                     
@@ -1168,7 +1198,8 @@ footer{
                 
             }
         
-
+    
+        
     #apresentacao_imgs{
         width: 40%;
         height: 100%;
@@ -1198,26 +1229,31 @@ footer{
                 background-repeat: no-repeat;
                 margin-left: 5%;
             }
-            #imgs_section{
-        flex-direction: column;
-        gap: 8%;
+
+        
+    #imgs_section{
+        flex-direction:column;
+        gap: 18%;
         margin-top: 0;
     }
+
+#sobre_nos{
+    height: 100vh;
+}
     .advs_cards{
-        height: 40%;
-        max-height: 40%;
+        height: 400px;
         width: 70%;
     }
         .info_footer_advgs{
-            height: 28%;
+            height: 38%;
         }
     
                     .txts_footer_advs p{
-                        font-size: 125%;
+                        font-size: 75%;
                         margin-left: 12%;
                     }
                     .txts_footer_advs h4{
-                        font-size: 185%;
+                        font-size: 105%;
                         margin-left: 12%;
                     }
                 .icon_footer_advs{
@@ -1392,4 +1428,50 @@ footer{
     }
         
 
+}
+@media (max-width: 1200px) and (max-height: 700px) {
+    #sobre_nos{
+    height: 170vh;
+    }
+    .advs_cards{
+    height: 300px;
+    width: 70%;
+    }
+    #espaco-vital{
+    width: 100%;
+    height: 50%;
+    }
+     #contato_area{
+    height:140vh;
+    }
+       #contact-section-final{
+        width: 100%;   
+        height: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+
+    }
+       #contact-section-texts{
+        color: white;
+        width: 90%;
+        height:80%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:flex-start;
+        gap: 7%;
+        margin-top: 0;
+    }
+    #h2-contact-section-1{
+    width: 100%;
+    }
+    .icon-form{
+    position: absolute;
+    top:20%;
+    left: 2.6%;
+    color: rgb(82, 81, 81);
+    font-size: 80%;
+    }
 }

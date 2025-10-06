@@ -22,7 +22,25 @@ window.addEventListener('scroll', () =>{
     }
 })
 
+const menuMobile = document.querySelector('.menuMobile')
+const fecharMenu = document.querySelector('.closeMenu')
+const header_nav_mobile =document.querySelector('.header_nav_mobile')
 
+    menuMobile.addEventListener('click', () =>{
+        menuMobile.classList.add('mbOff')
+        fecharMenu.classList.toggle('cmOn')
+        header_nav_mobile.classList.add('hdnmOn')
+    })
+    fecharMenu.addEventListener('click', () =>{
+        menuMobile.classList.toggle('mbOff')
+        fecharMenu.classList.toggle('cmOn')
+        header_nav_mobile.classList.toggle('hdnmOn')
+    })
+
+
+
+
+//Menu de dúvidas frequentes
 document.addEventListener('DOMContentLoaded', function() {
     var botoesPergunta = document.querySelectorAll('.pergunta');
 
