@@ -19,6 +19,13 @@
     cursor: pointer;
     animation: trocarBackground 18s infinite steps(1);
 }
+    .floatChat{
+        opacity: 0;
+    }
+        .floatChat.flcOn{
+            opacity: 100;
+            transition: all ease 0.5s;
+        }
     #on_status_float_chat{
         width: 16px;
         height: 16px;

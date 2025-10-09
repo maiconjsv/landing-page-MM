@@ -43,7 +43,7 @@ const header_nav_mobile =document.querySelector('.header_nav_mobile')
 //animação de fade das soluções
 const solucao = document.querySelectorAll('.solucao')
     window.addEventListener('scroll', () =>{
-        if(window.scrollY > 300 ){
+        if(window.scrollY > 250 ){
             solucao.forEach(solucao =>{
                 solucao.classList.add('slShow')
             })
@@ -106,8 +106,13 @@ fecharChat.addEventListener('click', () =>{
     }, 1000)
 })
 
-//animação do chat
-
+//Animação do floatChat
+document.addEventListener('DOMContentLoaded', ()=>{
+    const floatchatm = document.querySelector('.floatChat')
+    setTimeout(() =>{
+        floatchatm.classList.add('flcOn')
+    }, 5000)
+})
 
 
 
