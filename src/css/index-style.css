@@ -670,6 +670,7 @@ header{
                 justify-content: center;
                 gap: 5%;
                 color: #1D3557;
+                z-index: 4;
             }
                 .txts_footer_advs{
                     height: 100%;
@@ -762,6 +763,7 @@ header{
                         transition: all ease 0.9s;
                         border-bottom-left-radius: 0;
                         border-bottom-right-radius: 0;
+                        z-index: 5;
                     }
 
 #duvidas_frequentes{/*.*/
@@ -1645,9 +1647,9 @@ footer{
     border-bottom: solid white 0.7px;
     
 }
-    #blog-section{
+/*    #blog-section{
 
-    }
+    }*/
 }  
         #txts-blog{
             display: flex;

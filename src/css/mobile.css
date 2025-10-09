@@ -346,7 +346,7 @@
 
     #sobre_nos{
     min-height: 100vh;
-    height: 120vh;        
+    height: 140vh;        
     }
     #imgs_section{
         flex-direction: column;
@@ -362,19 +362,19 @@
         .info_footer_advgs{
             height: 28%;
         }
-    
-                    .txts_footer_advs p{
-                        font-size: 65%;
-                        margin-left: 12%;
-                    }
-                    .txts_footer_advs h4{
-                        font-size: 105%;
-                        margin-left: 12%;
-                    }
-                .icon_footer_advs{
-                    width: 10%;
-                    margin-right: 3%;
-                }
+
+        .txts_footer_advs p{
+        font-size: 65%;
+        margin-left: 12%;
+        }
+        .txts_footer_advs h4{
+        font-size: 105%;
+        margin-left: 12%;
+        }
+        .icon_footer_advs{
+        width: 10%;
+        margin-right: 3%;
+        }
         #advogado_foto-1{
             background-position: 0% 25%;
             background-size: 100%;
@@ -383,6 +383,24 @@
             background-position: 0% 25%;
             background-size: 100%;
         }
+
+        .advogado-info{
+            height: 100%;
+            padding-left: 10px; 
+            padding-right: 10px;
+            }
+                .advogado-info h4{
+                    margin: 10% 5% 0 10%;
+                    font-size: 110%;
+                }
+                .adv-info-p1{
+                    margin: 0.6% 3% 0 10%;
+                    font-size: 75%;
+                }
+                .adv-info-p2{
+                    font-size: 70%;
+                    margin: 10% 3% 0 10%;
+                }
 
     
     #duvidas_frequentes{/*.*/
@@ -581,10 +599,10 @@
                     top:20%;
                     left: 2.6%;
                     color: rgb(82, 81, 81);
-                    font-size: 75%;
+                    font-size: 115%;
                 }
                 #iconTxtArea{
-                    top: 8%;
+                    top: 13%;
                 }
                 .input-form{
                     width: 100%;
