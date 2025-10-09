@@ -43,7 +43,7 @@ const header_nav_mobile =document.querySelector('.header_nav_mobile')
 //animação de fade das soluções
 const solucao = document.querySelectorAll('.solucao')
     window.addEventListener('scroll', () =>{
-        if(window.scrollY > 250 ){
+        if(window.scrollY > 290 ){
             solucao.forEach(solucao =>{
                 solucao.classList.add('slShow')
             })
