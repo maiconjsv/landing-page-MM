@@ -40,7 +40,15 @@ const header_nav_mobile =document.querySelector('.header_nav_mobile')
         header_nav_mobile.classList.toggle('hdnmOn')
     })
 
-
+//animação de fade das soluções
+const solucao = document.querySelectorAll('.solucao')
+    window.addEventListener('scroll', () =>{
+        if(window.scrollY > 300 ){
+            solucao.forEach(solucao =>{
+                solucao.classList.add('slShow')
+            })
+        }
+    })
 
 
 //Menu de dúvidas frequentes
