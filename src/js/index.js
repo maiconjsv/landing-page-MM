@@ -169,3 +169,26 @@ seta_baixo_2.addEventListener('click', () =>{
    info_footer_advgs_1[1].classList.toggle('off')
    console.log(info_footer_advgs_1)
 })
+
+
+//enviar mensagem whatsapp personalizada
+function enviarMSG(){
+    const inputName = document.getElementById('inpt-name').value.trim()
+    const message = document.getElementById('teextarea').value.trim()
+
+    if( !inputName || !message){
+        alert("Preencha o nome e a mensagem")
+        return
+    }
+    const meuWhats = "+5543996045936"
+    const  texto = `Olá! Meu nome é ${inputName}. ${message}`
+    const url = `https://wa.me/${meuWhats}?text=${encodeURIComponent(texto)}`
+    
+    window.open(url, "_blank")
+}
+
+//enviar mensagens normais
+function sendWhats(){
+    const urlW = "https://wa.me/5543996045936"
+    window.open(urlW, "_blank")
+}
