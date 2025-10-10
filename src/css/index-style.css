@@ -34,6 +34,7 @@ header{
     z-index: 100;
     transition: all ease 0.8s;
     align-items: center;
+    border-bottom: #1D3557 solid 0.4px;
 }
     .hdS_on{
         height: 65px;
@@ -115,7 +116,7 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 1290px;
+    max-width: 1390px;
     min-height: 88vh;
     margin: 0 auto;
     height: auto;
