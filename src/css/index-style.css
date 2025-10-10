@@ -115,14 +115,14 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1290px;
     min-height: 88vh;
     margin: 0 auto;
     height: auto;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.253) 0px 3.5px 2px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
     #textIntro{
         width: 50%;
@@ -145,7 +145,7 @@ header{
             color: white;
         }
         #p1_gn{
-            font-size: 120%;
+            font-size: 270%;
             
         }
         #p1_gn_mobile{
