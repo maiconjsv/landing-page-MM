@@ -787,7 +787,7 @@ header{
 #duvidas_frequentes{/*.*/
     background-color: white;
     width: 65%;
-    min-height: 80vh;
+    min-height: 60vh;
     height: auto;
     position: absolute;
     top: -4%;
@@ -797,7 +797,7 @@ header{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 40px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
     border-radius: 20px;
     z-index: 1;
 }
