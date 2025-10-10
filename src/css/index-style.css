@@ -273,7 +273,7 @@ header{
     }
         .solucao{
             width: 30%;
-            height: 23rem;
+            height: 26rem;
             margin: 3% 0% 0.2%;
             display: flex;
             flex-direction: column;
@@ -347,7 +347,7 @@ header{
             z-index: 6;
             background-color: white;
             text-align: center;
-            height: 260px;
+            height: 70%;
             align-items: center;
             justify-content: center;
             border-radius: 10px;
@@ -365,10 +365,10 @@ header{
                 width: 100%;
                 color: #1D3557;
                 text-align: left;
-                margin: 0 0 10px 0;
-                height: 25%;
+                /*margin: 0 0 10px 0;*/
+                height: 50%;
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
                 /*border-bottom: solid #1d3557a8 0.8px;*/
             }
                 .h3_solucao_text h3{
@@ -376,31 +376,35 @@ header{
                     font-size: 160%;
                 }
                     #h3_s_t_inss{
-                        
-                        width: 90%;
+                        width: 100%;
                         margin: 0;
                         color: #1D3557;
                         text-align: left;
-                        margin: 0 0 10px 0;
-                        height: 28%;
+                        /*margin: 0 0 10px 0;*/
+                        height: 50%;
                         display: flex;
-                        align-items: flex-end;
-                        font-size: 105%;
+                        align-items: center;
                         /*border-bottom: solid #1d3557a8 0.8px;*/
                     }
+                        #h3_s_t_inss h3{
+                            margin-left: 5%;
+                            font-size: 160%;
+                        }
                     #h3_financ{
-                        padding: 0 0 0 8%;
                         width: 100%;
-                        margin: 0 0 10px 0;
+                        /*margin: 0 0 10px 0;*/
                         color: #1D3557;
                         text-align: left;
-                        height: 28%;
+                        height: 50%;
                         display: flex;
-                        align-items: flex-end;
-                        font-size: 90%;
-                        
+                        align-items: center;
                         /*border-bottom: solid #1d3557a8 0.8px;*/
                     }
+                        #h3_financ h3{
+                            font-size: 160%;
+                            margin-left: 5%;
+                            margin-right: 5%;
+                        }
 
             .p_solucao_text{
                 margin: 0;
@@ -440,7 +444,7 @@ header{
                         color: #1D3557;
                         font-size: 70%;
                         display: flex;
-                        width: 70%;
+                        width: 88%;
                         margin-left: 5.5%;
                     }
             
