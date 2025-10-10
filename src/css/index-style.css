@@ -854,8 +854,8 @@ header{
 #contato_area{
     background-color: #1D3557;
     width: 100%;
-    min-height: 230vh;
-    height: 230vh;
+    min-height: 200vh;
+    height: 200vh;
     position: relative;
     border-bottom: solid white 0.7px;
     display: flex;
@@ -864,8 +864,8 @@ header{
 }
     #espaco-vital{
         width: 100%;
-        min-height: 15%;
-        height: 21%;
+        min-height: 25%;
+        height: 35%;
 
     }
   /*blog*/
@@ -908,7 +908,7 @@ header{
                 height: 90%;
                 background-image: url(../img/Justice_BLOG.png);
                 background-position: center;
-                background-size: 70%;
+                background-size: 65%;
                 background-repeat: no-repeat;
             }
             #txt-img-blog{
