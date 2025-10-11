@@ -364,8 +364,14 @@
         height: 35%;
         max-height: 40%;
     }
+    #advogado_foto-1{
+        height: 80%;
+    }
+    #advogado_foto-2{
+        height: 80%;
+    }    
         .info_footer_advgs{
-            height: 28%;
+            height: 20%;
         }
 
         .txts_footer_advs p{
@@ -411,7 +417,7 @@
     #duvidas_frequentes{/*.*/
         background-color: white;
         width: 75%;
-        min-height: 37vh;
+        min-height: 35vh;
         height: auto;
         position: absolute;
         top: -3%;
@@ -420,20 +426,22 @@
         display:flex;
         flex-direction: column;
         align-items: flex-start;
+        text-align: left;
         justify-content: center;
-        padding: 20px;
         border-radius: 20px;
         z-index: 10;
+        padding: 8px 13px 13px 10px;
     }
         #duvidas_frequentes h3{
-            display: none;
+            display: flex;
+            padding-top: 12px;
         }
     .duvida{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 1.2% 1% 1.2% 1%;
+        margin: 2% 1% 1.2% 1%;
         gap: 5px;
         width: 99%;
     }
