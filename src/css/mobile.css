@@ -80,8 +80,7 @@
     #introSection{
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        
+        justify-content: space-between;  
     }
         #textIntro{
             width: 100%;
@@ -143,6 +142,11 @@
                 
             }
 
+ #h1-sol-mobile{
+    line-height: 1;
+    margin-top: 12px;
+ }
+
      .solucao{
         width: 90%;
         margin: 5% auto;
@@ -163,14 +167,14 @@
             top: 29%;
         }
         .h3_solucao_text{
-            font-size: 80%;
+            font-size: 100%;
         }
         #h3_financ{
-            font-size: 79%;
+            font-size: 89%;
             margin-right: 0%;
         }
         #h3_s_t_inss{
-            font-size: 79%;
+            font-size: 89%;
         }
 
     #solucoes_info{
