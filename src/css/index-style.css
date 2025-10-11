@@ -20,6 +20,9 @@ body, html{
         position: relative;
         background-color: #1D3557;
     }
+    body{
+        background-color: #1D3557;
+    }
 
     /*Cabeçalho do site*/
 header{
@@ -787,7 +790,6 @@ header{
 #duvidas_frequentes{/*.*/
     background-color: white;
     width: 65%;
-    
     height: auto;
     position: absolute;
     top: -4%;
@@ -846,10 +848,6 @@ header{
                 .pergunta:hover, .pergunta.active { 
                      background-color: #ddd;
                 }
-
-            
-
-
 
 #contato_area{
     background-color: #1D3557;
@@ -1649,7 +1647,7 @@ footer{
             background-size: 100%;
         }
     #duvidas_frequentes{
-        min-height: 20vh;
+        height: auto;
         top: -2.5%;
     }
     #espaco-vital{

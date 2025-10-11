@@ -180,7 +180,7 @@ function enviarMSG(){
         alert("Preencha o nome e a mensagem")
         return
     }
-    const meuWhats = "+5543996045936"
+    const meuWhats = "+5543991698626"
     const  texto = `Olá! Meu nome é ${inputName}. ${message}`
     const url = `https://wa.me/${meuWhats}?text=${encodeURIComponent(texto)}`
     
@@ -189,6 +189,6 @@ function enviarMSG(){
 
 //enviar mensagens normais
 function sendWhats(){
-    const urlW = "https://wa.me/5543996045936"
+    const urlW = "https://wa.me/5543991698626"
     window.open(urlW, "_blank")
 }

@@ -1,0 +1,78 @@
+@charset 'UTF-8';
+
+@media(min-height:800px) and (min-width:1300px){
+    header{
+        height: 120px;
+
+    }
+       #textIntro{
+            width: 60%;
+       }
+     #p1_gn{
+            font-size: 390%;
+        }
+        #h1_gn{
+            font-size: 390%;
+            margin-top: -1.5%;
+        }
+        .p_gn{
+            font-size: 170%;
+            margin-top: 3.4%;
+        }
+        #ctr_intro{
+            width: 68%;
+            height:67px;
+            font-size: 170%;
+        }
+            #ctr_intro:hover{
+                width: 73%;
+                transition: all ease 0.5s;
+            }
+    #figure_intro{
+        width:40%;
+        min-height: 100%;
+    }
+    .advs_cards{
+        margin-top: -5%;
+        max-width: 450px;
+        min-width: 250px; 
+        width: 450px;
+        height: 65%;
+        max-height: 65%;
+    }
+.txts_footer_advs p{
+    font-size: 110%;
+    }
+.txts_footer_advs h4{
+    font-size: 145%;
+}
+
+.icon_footer_advs span{
+    font-size: 240%;
+    cursor: pointer;
+    margin-right: 1px;
+}
+.icon_footer_advs span:hover{
+    font-size: 280%;
+}
+.advogado-info h4{
+    font-size: 200%;
+}
+.adv-info-p1{
+    font-size: 125%;
+}
+.adv-info-p2{
+    font-size: 140%;
+}
+.seta-adv{
+    font-size: 390%;
+}
+#espaco-vital{
+    min-height: 20%;
+    height: 20%;
+}
+#contato_area{
+    min-height: 160vh;
+    height: 120vh;
+}
+}
