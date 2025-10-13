@@ -424,7 +424,7 @@ header{
                 justify-content: flex-start;
             }
                 .cta_solucoes{
-                    width: 100%;
+                    width: 90%;
                     height: 30px;
                     display: flex;
                     flex-direction: row;
@@ -1850,7 +1850,7 @@ footer{
 }
 
 
-
+/*
 @media (max-width:768px){
     main{
         margin-top: 21%;
@@ -2049,7 +2049,7 @@ footer{
     }
 
     /*parte da apresentação da advocacia*/
-
+/*
         #advocacia_apresentacao{
         height: 60vh;
         width: 100%;
@@ -2076,7 +2076,6 @@ footer{
             }
          #apresentacao_txts{
             width: 100%;
-            /*margin-right: 5%;*/
             height: 70%;
             display: flex;
             flex-direction: column;
@@ -2236,7 +2235,7 @@ footer{
         }
 
     
-    #duvidas_frequentes{/*.*/
+    #duvidas_frequentes{
         background-color: white;
         width: 75%;
         min-height: 37vh;
