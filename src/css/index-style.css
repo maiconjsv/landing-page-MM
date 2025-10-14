@@ -787,8 +787,7 @@ header{
                         border-bottom-right-radius: 0;
                         z-index: 5;
                     }
-
-#duvidas_frequentes{/*.*/
+#duvidas_frequentes{
     background-color: white;
     width: 65%;
     height: auto;
@@ -1007,7 +1006,7 @@ header{
         min-height: 60%;
         display: flex;
         align-items: flex-end;
-        
+        padding-bottom: 10px;
     }
         #layout-form{
             background-color: white;
@@ -2568,4 +2567,4 @@ footer{
         align-items: center;
         padding: 0;
     }   
-}
+}}
