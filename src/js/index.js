@@ -192,3 +192,40 @@ function sendWhats(){
     const urlW = "https://wa.me/5543991698626"
     window.open(urlW, "_blank")
 }
+//lazy sections
+document.addEventListener("DOMContentLoaded", () => {
+  const lazySections = document.querySelectorAll(".lazy-section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const section = entry.target;
+        section.classList.add("loaded");
+        observer.unobserve(section);
+      }
+    });
+  }, { rootMargin: "150px" });
+
+  lazySections.forEach(section => observer.observe(section));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyBgs = document.querySelectorAll(".lazy-bg");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const section = entry.target;
+        const bg = section.dataset.bg;
+
+        section.style.backgroundImage = `url(${bg})`;
+        section.classList.add("loaded");
+
+        observer.unobserve(section); // não precisa observar mais
+      }
+    });
+  }, { rootMargin: "200px" });
+
+  lazyBgs.forEach(bg => observer.observe(bg));
+});
+

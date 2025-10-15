@@ -110,8 +110,15 @@ header{
             margin-left: 8%;
             cursor: pointer;
         }
-
-
+    .lazy-section {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+            .lazy-section.loaded {
+                opacity: 1;
+                transform: translateY(0);
+                transition: all ease 0.6s;
+            }
 
         /*Seção da intro do site*/
 #introSection{
@@ -309,7 +316,16 @@ header{
                 position: relative;
                 z-index: 5;
             }
-                #illust_trabalhista{
+                .lazy-bg{
+                    opacity: 0;
+                    transform: translateY(30px);
+                    transition: opacity .8s ease, transform .8s ease;
+                }
+                    .lazy-bg.loaded {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+               /* #illust_trabalhista{
                     background-image: url(../img/martelo-e-capacete-juiz-lei-e-justica-sobre-o-conceito-de-direito-trabalhista-lei-de-construcao-x9.jpg);
     
                 }
@@ -327,7 +343,7 @@ header{
                 }
                 #illust_inss{
                     background-image: url(../img/casal-senior-indiano-asiatico-organizando-ou-empilhando-moedas-em-uma-fileira-foco-seletivo.jpg);
-                }
+                }*/
             .icon_solucao{
                 position: absolute;
                 z-index: 7;
@@ -436,6 +452,7 @@ header{
                     transition: all ease 0.6s;
                     cursor: pointer;
                     margin-left: 4%;
+                    margin-bottom: 6%;
                 }
                     .cta_solucoes:hover{
                         background-color: #1D3557;
@@ -571,19 +588,17 @@ header{
                 background-repeat: no-repeat;
             }
                 #img1{
-                    background-image: linear-gradient(to top, #1d355700 60%, #1D3557 90% ), url(../img/familiasorrinmd.jpg) ;
+                    background-image: linear-gradient(to top, #1d355700 60%, #1D3557 90% )  ;
                 }
-                #img2{
-                    background-image: url(../img/martelo-juiz.jpg) ;
-                }
+
                 #img3{
-                    background-image: linear-gradient(to bottom, #1d355700 60%, #1D3557 90% ), url(../img/vista-anguo.jpg) ;
+                    background-image: linear-gradient(to bottom, #1d355700 60%, #1D3557 90% ) ;
                 }
                 #img4{
-                    background-image: linear-gradient(to top, #1d355700 60%, #1D3557 90% ), url(../img/consuta-ref.jpg);
+                    background-image: linear-gradient(to top, #1d355700 60%, #1D3557 90% );
                 }
-                #img5{ background-image: url(../img/familia-divertida.jpg);}
-                #img6{ background-image: linear-gradient(to bottom, #1d355700 60%, #1D3557 90% ), url(../img/advogados.jpg);}
+               
+                #img6{ background-image: linear-gradient(to bottom, #1d355700 60%, #1D3557 90% );}
         
 
 #sobre_nos{
@@ -647,7 +662,7 @@ header{
         align-items: center;
         justify-content: center;
         gap: 5%;
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
     }
         .advs_cards{
             margin-top: -5%;
@@ -1338,7 +1353,6 @@ footer{
                 margin-left: 5%;
             }
 
-        
     #imgs_section{
         flex-direction:column;
         gap: 18%;
@@ -1418,6 +1432,7 @@ footer{
         
 
 }
+
 
 @media (max-width:1200px) and (min-width: 768px) and (hover: none) and (pointer: coarse){
         #introSection{
@@ -2544,6 +2559,15 @@ footer{
     }
 
 @media(max-width: 768px) and (max-height:742px){
+        .chat_lp{
+        height: 80vh;
+        width: 100vw;
+    }
+    #float_chat{
+    width: 70px;
+    height: 70px;
+    }
+
     #espaco-vital{
     width: 100%;
     height: 10%;
@@ -2568,3 +2592,361 @@ footer{
         padding: 0;
     }   
 }}
+
+@media(min-height:800px) and (min-width:1300px){
+    header{
+        height: 120px;
+
+    }
+       #textIntro{
+            width: 60%;
+       }
+     #p1_gn{
+            font-size: 390%;
+        }
+        #h1_gn{
+            font-size: 390%;
+            margin-top: -1.5%;
+        }
+        .p_gn{
+            font-size: 170%;
+            margin-top: 3.4%;
+        }
+        #ctr_intro{
+            width: 68%;
+            height:67px;
+            font-size: 170%;
+        }
+            #ctr_intro:hover{
+                width: 73%;
+                transition: all ease 0.5s;
+            }
+    #figure_intro{
+        width:40%;
+        min-height: 100%;
+    }
+
+
+ #apresentacao_txts{        
+    gap: 5%;
+    height: 80%;
+}
+.txt_textos h3{
+    font-size: 173%;
+    margin-bottom: 3px;                    
+}
+.txt_textos p{
+    font-size: 165%;
+    font-weight: 400;
+}
+    .advs_cards{
+        margin-top: -5%;
+        max-width: 450px;
+        min-width: 250px; 
+        width: 450px;
+        height: 65%;
+        max-height: 65%;
+    }
+.txts_footer_advs p{
+    font-size: 110%;
+    }
+.txts_footer_advs h4{
+    font-size: 145%;
+}
+
+.icon_footer_advs span{
+    font-size: 240%;
+    cursor: pointer;
+    margin-right: 1px;
+}
+.icon_footer_advs span:hover{
+    font-size: 280%;
+}
+.advogado-info h4{
+    font-size: 200%;
+}
+.adv-info-p1{
+    font-size: 125%;
+}
+.adv-info-p2{
+    font-size: 140%;
+}
+.seta-adv{
+    font-size: 390%;
+}
+#espaco-vital{
+    min-height: 20%;
+    height: 20%;
+}
+#contato_area{
+    min-height: 160vh;
+    height: 120vh;
+}
+#txt-img-blog p{
+    font-size: 160%;
+}
+#blog-ctr{
+    width: 100%;
+    height: 16%;
+    font-weight: 700;
+    font-size: 150%;
+}
+#contact-section-form{
+    min-height: 70%;
+}
+#layout-form{
+    width: 65%;
+    min-height: 100%;
+}
+
+
+
+#contact-section-texts p{
+    font-size: 140%;
+}
+#h2-contact-section-1{
+    font-size: 210%;
+}
+#h2-contact-section-2{
+    font-size: 210%;
+}
+
+}
+
+
+/*chat interativo*/
+
+#float_chat{
+    width: 100px;
+    height: 100px;
+    
+    background-position: center;
+    background-size: 100%;
+    position: fixed;
+    z-index: 100;
+    right: 3%;
+    bottom: 5%;
+    border-radius: 50%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+    animation: trocarBackground 18s infinite steps(1);
+}
+    .floatChat{
+        opacity: 0;
+    }
+        .floatChat.flcOn{
+            opacity: 100;
+            transition: all ease 0.5s;
+        }
+    #on_status_float_chat{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #28A745;
+        z-index:11 ;
+        margin-bottom: 7px;
+        margin-right: 6px;
+        animation: latejamentoBola 7s infinite;
+        
+    }
+@keyframes trocarBackground {
+    0% {background-image: url(../img/maciel.jpeg);}
+    50% {background-image: url(../img/pedro.jpeg);}
+    100% {background-image: url(../img/maciel.jpeg) ;}
+}
+@keyframes latejamentoBola {
+    0% , 100% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+
+.chat_lp.chatOff{
+    bottom: -100vh;
+    transition: all ease 0.6s;
+}
+
+.chat_lp{
+    transition: all ease 0.6s;
+    width: 356px;
+    height: 370px;
+    background-color: white;
+    position: fixed;
+    z-index: 110;
+    right: 8px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: black 3px 1px 13px 3px;
+}
+    #header_chat{
+        background-color: #1D3557;
+        width: 100%;
+        height: 17.5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        color: white;
+    }
+        #img-1-chat{
+            width: 42px;
+            height: 42px;
+            background-image: url(../img/pedro.jpeg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            margin-left: 18px;
+        }
+        #header_chat h4{
+            font-size: 98%;
+            margin-left: -28px;
+        }
+        #close_chat{
+            width: 16px;
+            height: 16px;
+            background-color: white;
+            color: #1D3557;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 17px;
+            cursor: pointer;
+        }
+            #close_chat span{
+                font-size: 90%;
+            }
+    #content_chat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .messages{
+            display: flex;
+            transition: all ease-out 0.5s;
+        }
+        .messages.msgOff{
+            opacity: 0;
+        }
+        #chat-message-1{
+            background-color: #D9D9D9;
+            margin-top: 60px;
+            min-width: 73%;
+            width: auto;
+            min-height: 46px;
+            height: auto;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+            #chat-message-1 p{
+                margin-left: 18px;
+            }
+        #chat-message-2{
+            background-color: #D9D9D9;
+            margin-top: 15px;
+            min-height: 120px;
+            min-width: 73%;
+            width: 73%;
+            border-radius: 20px;
+            border-bottom-left-radius: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+            #chat-message-2 p{
+                margin-left: 18px;
+            }
+                #btn-chat{
+                    margin-top: 6%;
+                    margin-left: 18px;
+                    border: none;
+                    min-width: 70%;
+                    min-height: 35px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-weight: 600;
+                    color: white;
+                    background-color: #28A745;
+                    cursor: pointer;
+                    position: relative;
+                }
+        #mini-rosto-chat{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-image: url(../img/pedro.jpeg);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            left: 7%;
+            bottom: 12%;
+        }
+            .digitando{
+                width: 28px;
+                height: 9px;
+                background-color: #D9D9D9;
+                position: absolute;
+                bottom: 0;
+                right: -20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 10%;
+            }
+                .digitando.digitandoOff{
+                    display: none;
+                }
+                #b-1{
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background-color: #BFBFBF;
+                    animation: b1 1.6s infinite ;
+                }
+                #b-2{
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background-color: #BFBFBF;
+                    animation: b1 1.8s infinite ;
+                }
+                #b-3{
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background-color: #BFBFBF;
+                    animation: b1 2s infinite ;
+                }
+                    @keyframes b1{
+                        0%{scale: 100%; background-color: #BFBFBF;}
+                        50%{scale: 150%; background-color: #120F17;}
+                        100%{scale: 100%;}
+                    }
+
+    #aviso_chat{
+        width: 100%;
+        min-height: 9%;
+        background-color: #D9D9D9;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #aviso_chat small{
+            font-size: 60%;
+        }
+

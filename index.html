@@ -10,13 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <link rel="shortcut icon" href="src/img/Screenshot from 2025-10-08 21-19-49.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/index-style.css">
     <link rel="stylesheet" href="src/css/mobile.css">
     <link rel="stylesheet" href="src/css/chat.css">
-    <link rel="stylesheet" href="src/css/tablets.css">
-    <link rel="stylesheet" href="src/css/bigscreens.css">
+    
 </head>
 <body>
     <!--chat interativo-->
@@ -117,9 +115,9 @@
             </div>
 
             <div id="solucoes_container">
-                <div class="solucao" id="solucao_direito_trabalhista">
-                    <div class="illust_solucao" id="illust_trabalhista"></div>
-                    <div class="icon_solucao" id="icon_solucao_trabalhista"><img src="src/img/mala.svg" alt="icone de mala"></div>
+                <div class="solucao lazy-section" id="solucao_direito_trabalhista">
+                    <div class="illust_solucao lazy-bg" id="illust_trabalhista" data-bg="src/img/martelo-e-capacete-juiz-lei-e-justica-sobre-o-conceito-de-direito-trabalhista-lei-de-construcao-x9.jpg"></div>
+                    <div class="icon_solucao" id="icon_solucao_trabalhista"><img src="src/img/mala.svg" alt="icone de mala" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="h3_solucao_text">
                             <h3>Direito Trabalhista</h3>
@@ -135,9 +133,9 @@
                     </div>
                 </div>
 
-                <div class="solucao" id="solucao_defesa_financeiras">
-                    <div class="illust_solucao" id="illust_financeiras"></div>
-                    <div class="icon_solucao" id="icon_solucao_financeiras"><img src="src/img/cartao.svg" alt="icone de cartão de crédito"></div>
+                <div class="solucao lazy-section" id="solucao_defesa_financeiras">
+                    <div class="illust_solucao lazy-bg" id="illust_financeiras" data-bg="src/img/mao-segurando-um-cartao-de-credito-ao-lado-de-um-atm.jpg"></div>
+                    <div class="icon_solucao" id="icon_solucao_financeiras"><img src="src/img/cartao.svg" alt="icone de cartão de crédito" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="" id="h3_financ">
                             <h3>Defesa Contra Bancos e Financeiras</h3>
@@ -153,8 +151,8 @@
                     </div>
                 </div>
 
-                <div class="solucao" id="solucao_saude">
-                    <div class="illust_solucao" id="illust_saude"></div>
+                <div class="solucao lazy-section" id="solucao_saude">
+                    <div class="illust_solucao lazy-bg" id="illust_saude" data-bg="src/img/medica-segurando-pulmoes-virtuais-na-mao-espaco-de-copia-de-orgao-humano-desenhado-a-mao-no-lado-direito-cores-de-fotos-cruas-conceito-de-servico-hospitalar-de-saude-foto-de-stock.jpg"></div>
                     <div class="icon_solucao" id="icon_solucao_saude"><img src="src/img/saude.svg" alt="icone de saude" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="h3_solucao_text">
@@ -170,9 +168,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="solucao" id="solucao_consumidor">
-                    <div class="illust_solucao" id="illust_consumidor"></div>
+                <div class="solucao lazy-section" id="solucao_consumidor">
+                    <div class="illust_solucao lazy-bg" id="illust_consumidor" data-bg="src/img/mulher-de-negocios-inicia-empresario-de-pequenas-empresas-pme-sucesso-mulher-freelance-trabalhando-em-casa-com-entrega-de-encomendas-line-sme-e-conceito-de-entrega-de-embalagens.jpg"></div>
                     <div class="icon_solucao" id="icon_solucao_consumidor"><img src="src/img/checkout.svg" alt="icone de checkin " loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="h3_solucao_text">
@@ -188,9 +185,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="solucao" id="solucao_defesa_voos">
-                    <div class="illust_solucao" id="illust_voos"></div>
+                <div class="solucao lazy-section" id="solucao_defesa_voos">
+                    <div class="illust_solucao lazy-bg" id="illust_voos" data-bg="src/img/viajante-jovem-com-bagagem-segurando-passaporte-olhar-airplan.jpg"></div>
                     <div class="icon_solucao" id="icon_solucao_voos"><img src="src/img/aviao.svg" alt="icone de avião" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="h3_solucao_text">
@@ -206,9 +202,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="solucao" id="solucao_inss">
-                    <div class="illust_solucao" id="illust_inss"></div>
+                <div class="solucao lazy-section" id="solucao_inss">
+                    <div class="illust_solucao lazy-bg" id="illust_inss" data-bg="src/img/casal-senior-indiano-asiatico-organizando-ou-empilhando-moedas-em-uma-fileira-foco-seletivo.jpg"></div>
                     <div class="icon_solucao" id="icon_solucao_inss"> <img src="src/img/Group.svg" alt="icone de inss" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="" id="h3_s_t_inss">
@@ -226,8 +221,7 @@
                 </div>
             </div>
         </section>
-
-        <section id="advocacia_apresentacao">
+        <section id="advocacia_apresentacao" class="lazy-section">
             <div id="aprentacao_textos">
                 <div id="tittle_apresentacao">
                     <h2>Advocacia moderna,</h2>
@@ -257,21 +251,18 @@
                     </div>
                 </div>
             </div >
-
             <div id="apresentacao_imgs">
-                <div id="imgs_apr">
-                    <div class="img_apr img_apr_top" id="img1"></div>
-                    <div class="img_apr img_apr_top" id="img2"></div>
-                    <div class="img_apr" id="img3"></div>
-                    <div class="img_apr" id="img4"></div>
-                    <div class="img_apr img_apr_bottom" id="img5"></div>
-                    <div class="img_apr img_apr_bottom" id="img6"></div>
+                <div id="imgs_apr" class="lazy-section">
+                    <div class="img_apr img_apr_top lazy-bg" data-bg="src/img/familiasorrinmd.jpg" id="img1"></div>
+                    <div class="img_apr img_apr_top lazy-bg" data-bg="src/img/martelo-juiz.jpg" id="img2"></div>
+                    <div class="img_apr lazy-bg" data-bg="src/img/vista-anguo.jpg" id="img3" ></div>
+                    <div class="img_apr lazy-bg" data-bg="src/img/consuta-ref.jpg" id="img4"></div>
+                    <div class="img_apr img_apr_bottom lazy-bg" data-bg="src/img/familia-divertida.jpg" id="img5"></div>
+                    <div class="img_apr img_apr_bottom lazy-bg" data-bg="src/img/advogados.jpg" id="img6"></div>
                 </div>
             </div>
         </section>
-
-        <section id="sobre_nos">
-            
+        <section id="sobre_nos" class="lazy-section">
             <div id="txts_sobreNos">
                 <div id="advogados_especialista"> Advogados Especialistas</div>
                 <div id="h1_sobreNos"> 
@@ -320,10 +311,7 @@
                 </div>
             </div>
         </section>
-
-        
-
-        <section id="contato_area">
+        <section id="contato_area" class="lazy-section">
             <section id="duvidas_frequentes">
                     <h3>Duvidas frequentes</h3>
                 <div class="duvida">
@@ -402,7 +390,7 @@
                 </div>
             </section>
         </section>
-        <footer>
+        <footer class="lazy-section">
             <div id="footer-area">
                 <nav id="footer-nav">
                     <h4>NAVEGAÇÃO</h4>
@@ -435,13 +423,13 @@
 
 
     <!-- Meta Pixel Code -->
-<script>
+<script defer>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-JY1F865YG7');
 </script>
 <!-- End Meta Pixel Code -->
- <script src="src/js/index.js"></script>
+ <script src="src/js/index.js" defer></script>
 </body>
 </html>

@@ -1,6 +1,16 @@
 @charset 'UTF-8';
 
 @media (max-width:768px)  and (hover: none) and (pointer: coarse){
+    .chat_lp{
+        height: 80vh;
+        width: 100vw;
+    }
+    #float_chat{
+    width: 70px;
+    height: 70px;
+    }
+
+    
     main{
         margin-top: 21%;
     }
@@ -435,7 +445,7 @@
         align-items: center;
         text-align: left;
         justify-content: center;
-        border-radius: 20px;
+        border-radius: 0;
         z-index: 10;
         padding: 0;
     }
@@ -535,7 +545,10 @@
                     font-size: 80%;
                 }
                 #blog-ctr{
-                    height: 25%;
+                    height: 35px;
+                    width: auto;
+                    padding: 0 15px 0 15px;
+                    
                 }
 
 
