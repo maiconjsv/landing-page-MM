@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+
 
 @media (max-width:768px)  and (hover: none) and (pointer: coarse){
     .chat_lp{
@@ -20,7 +20,9 @@
         height: 10%;
         z-index: 100;
     }
-
+    #logoHeaderImg{
+        content: url(../img/logo-azul-mobile.webp);
+    }
     #header_nav{
         display: none;
     }
@@ -152,7 +154,7 @@
             align-items: flex-end;
         }
             #img-justica{
-                content: url(../img/Group\ 26.png);
+                content: url(../img/Group\ 26.webp);
                 max-width: 40%;
                 
                 height: auto;

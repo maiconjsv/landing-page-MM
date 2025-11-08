@@ -5,23 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maciel e Morais Advogados</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY1F865YG7"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Preconnect + async load dos ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  </noscript>
+    <link rel="preload" href="src/fonts/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="shortcut icon" href="src/img/Screenshot from 2025-10-08 21-19-49.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/index-style.css">
-    <link rel="stylesheet" href="src/css/mobile.css">
-    <link rel="stylesheet" href="src/css/chat.css">
+    <meta name="description" content="Seus direitos foram desrespeitados? Fale com um advogado especialista 24h por WhatsApp, sem juridiquês. Entenda como agir. Fale conosco agora!">
+    <meta name="author" content="Maciel e Morais Advogados">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-194TPG28Y5"></script>
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
     
+      gtag('config', 'G-194TPG28Y5');
+    </script>
+
 </head>
 <body>
     <!--chat interativo-->
     <div id="float_chat" class="floatChat">
         <div id="on_status_float_chat"></div>
     </div>
-
     <div id="chat_body" class="chat_lp chatOff">
         <div id="header_chat">
             <div id="img-1-chat"></div>
@@ -43,18 +54,17 @@
             </div>
             <div id="chat-message-2" class="messages msgOff">
                 <p>Quer falar agora com <strong>um Advogado</strong> pelo WhatsApp?</p>
-                <button id="btn-chat" onclick="sendWhats()"><span>Sim, vamos lá!</span> <span class="material-symbols-outlined">arrow_right_alt</span></button>
+                <!--Removido a função sendWhats() para utilizar o do google.-->
+                <button id="btn-chat" onclick="return gtag_report_conversion('https://wa.me/5543991698626');" ><span>Sim, vamos lá!</span> <span class="material-symbols-outlined">arrow_right_alt</span></button>
             </div>
         </div>
         <div id="aviso_chat">
             <small>Ao clicar, você aceita nossa política de privacidade e autoriza o contato</small>
         </div>
     </div>
- 
-    <!--cabeçalho e menu que vai acompanhar toda a página/header and menu that's follow the scrolling-->
     <header id="headerSite" class="hdS ">
         <div id="logoHeader">
-            <img src="src/img/logo-azul.png" alt="Logo da advocacia, Maciel e morais advogados">
+            <img src="src/img/logo-azul.png" alt="Logo da advocacia, Maciel e morais advogados" id="logoHeaderImg">
         </div>
         <nav id="header_nav">
                 <div id="hd_nav">
@@ -65,7 +75,6 @@
                         <li id="hd_list_contato" class="list_nav"><a href="#contact-section-form" ><strong>Contato</strong></a></li>
                     </ul>
                 </div>
-                <!--Colocar um icone de menu aqui!-->
         </nav>
         <nav class="header_nav_mobile">
             <div id="hd_nav_mobile" >
@@ -79,9 +88,7 @@
         </nav>
         <span class="material-symbols-outlined menuMobile">menu</span>
         <span class="material-symbols-outlined closeMenu" >close</span>              
-
     </header>
-
     <main><!--Conteúdo geral da LP-->
         <section id="introSection">
             <div id="textIntro">
@@ -89,20 +96,19 @@
                     <p class="text_white" id="p1_gn">Seus direitos foram desrespeitados?</p>
                     <p class="text_white" id="p1_gn_mobile">Seus direitos <br>foram desrespeitados?</p>
                     <h1 class="text_white" id="h1_gn">Nós podemos te ajudar!</h1>
-                    <p class="text_white p_gn" id="p_gn_desktop">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados</strong>, em Londrina. <br>Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
-                    <p class="text_white p_gn" id="p_gn_mobile">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados</strong>, em Londrina. <br> <br>Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
+                    <p class="text_white p_gn" id="p_gn_desktop">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados.</strong><br>Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
+                    <p class="text_white p_gn" id="p_gn_mobile">Seus direitos em primeiro lugar. <br> Essa é a missão da <strong>Maciel e Morais Advogados.</strong> <br> <br>Compreendemos a frustração de ter um direito negado e não medimos esforços para agir. </p>
                    <!-- <p class="text_white p_gn" id="p-intro-media">Atuamos com advocacia moderna, focada em questões trabalhistas, previdenciárias e de consumidor, como cobranças abusivas de bancos e negativas de planos de saúde.</p>-->
                     <p class="text_white p_gn" id="equipe-disponivel">Nossa equipe está disponível <strong style="color: #D6A53D;">24 horas por dia</strong>, com <br>atendimento ágil e humano, direto pelo <strong>WhatsApp</strong>.</p>
-                    <div id="ctr_intro" onclick="sendWhats()">
-                        <img src="src/img/WhatsAppRecolor.png" alt="logo do whatsapp"><p class="text_white"><strong>Fale com um especialista</strong></p>
+                    <div id="ctr_intro" onclick="return gtag_report_conversion('https://wa.me/5543991698626');">
+                        <img src="src/img/WhatsApp.svg" alt="logo do whatsapp"><p class="text_white"><strong>Fale com um especialista</strong></p>
                     </div>
                 </div>
             </div>
             <div id="figure_intro">
-                <img src="src/img/public_justice_3 [Convertido].webp" alt="Imagem da justiça, com dois advogados em baixo." id="img-justica">
+                <img src="src/img/public_justice_3 [Convertido].webp" alt="Imagem da justiça, com dois advogados em baixo." id="img-justica" fetchpriority="high" decoding="auto" loading="eager">
             </div>
         </section>
-
         <section id="solucoes_section">
             <div id="text_solucoes">
                 <div id="solucoes_info">
@@ -113,10 +119,9 @@
                     <h1 id="h1-sol-mobile"><span class="como-podemos">Como podemos</span> <br>ajudar a resolver o seu problema</h1>
                 </div>
             </div>
-
             <div id="solucoes_container">
                 <div class="solucao lazy-section" id="solucao_direito_trabalhista">
-                    <div class="illust_solucao lazy-bg" id="illust_trabalhista" data-bg="src/img/martelo-e-capacete-juiz-lei-e-justica-sobre-o-conceito-de-direito-trabalhista-lei-de-construcao-x9.jpg"></div>
+                    <div class="illust_solucao lazy-bg" id="illust_trabalhista" data-bg="src/img/martelo-jus.webp"></div>
                     <div class="icon_solucao" id="icon_solucao_trabalhista"><img src="src/img/mala.svg" alt="icone de mala" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="h3_solucao_text">
@@ -126,15 +131,14 @@
                             <p >Horas extras não pagas? Demissão injusta? Acidente de trabalho? Falta de registro na carteira? Você trabalhou e merece receber cada centavo. Analisamos seu caso para garantir que você receba todos seus direitos</p>
                         </div>
                         <div class="cta_solucao_text">
-                            <a href="https://wa.me/5543991698626?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20analisar%20meu%20caso%20trabalhista." class="link_cta" target="_blank">
+                            <a href="#" onclick="return gtag_report_conversion('https://wa.me/5543991698626');" class="link_cta" target="_blank">
                                 <div class="cta_solucoes" id="cta_trabalhista" ><strong>Analisar meu caso trabalhista</strong> <span class="material-symbols-outlined">arrow_right_alt</span></div>
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="solucao lazy-section" id="solucao_defesa_financeiras">
-                    <div class="illust_solucao lazy-bg" id="illust_financeiras" data-bg="src/img/mao-segurando-um-cartao-de-credito-ao-lado-de-um-atm.jpg"></div>
+                    <div class="illust_solucao lazy-bg" id="illust_financeiras" data-bg="src/img/mao-segurando-um-cartao-de-credito-ao-lado-de-um-atm.webp"></div>
                     <div class="icon_solucao" id="icon_solucao_financeiras"><img src="src/img/cartao.svg" alt="icone de cartão de crédito" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="" id="h3_financ">
@@ -144,15 +148,14 @@
                             <p>Sofrendo com cobranças abusivas? Nome negativado por dívida que não é sua? Não deixe que os bancos tirem seu sono e seu dinheiro. Defendemos você contra ilegalidades, buscando a anulação de cobranças indevidas e a redução justa da sua dívida.</p>
                         </div>
                         <div class="cta_solucao_text">
-                            <a href="https://wa.me/5543991698626?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20defender%20meus%20direitos%20agora." class="link_cta" target="_blank">
+                            <a href="#" onclick="return gtag_report_conversion('https://wa.me/5543991698626');" class="link_cta" target="_blank">
                                 <div class="cta_solucoes" id="cta_financeiras"><strong>Defender meus direitos agora</strong> <span class="material-symbols-outlined">arrow_right_alt</span></div>
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="solucao lazy-section" id="solucao_saude">
-                    <div class="illust_solucao lazy-bg" id="illust_saude" data-bg="src/img/medica-segurando-pulmoes-virtuais-na-mao-espaco-de-copia-de-orgao-humano-desenhado-a-mao-no-lado-direito-cores-de-fotos-cruas-conceito-de-servico-hospitalar-de-saude-foto-de-stock.jpg"></div>
+                    <div class="illust_solucao lazy-bg" id="illust_saude" data-bg="src/img/media-seg.webp"></div>
                     <div class="icon_solucao" id="icon_solucao_saude"><img src="src/img/saude.svg" alt="icone de saude" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="h3_solucao_text">
@@ -162,14 +165,14 @@
                             <p>Plano de saúde negou seu tratamento, cirurgia ou exame? A saúde não pode esperar. Atuamos com máxima urgência, buscando uma liminar na justiça para garantir a liberação do seu procedimento e proteger o seu direito à vida.</p>
                         </div>
                         <div class="cta_solucao_text">
-                            <a href="https://wa.me/5543991698626?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20entrar%20em%20contato%20urgente." class="link_cta" target="_blank">
+                            <a href="#" onclick="return gtag_report_conversion('https://wa.me/5543991698626');" class="link_cta" target="_blank">
                                 <div class="cta_solucoes" id="cta_saude"><strong>Entrar em contato urgente</strong> <span class="material-symbols-outlined">arrow_right_alt</span></div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="solucao lazy-section" id="solucao_consumidor">
-                    <div class="illust_solucao lazy-bg" id="illust_consumidor" data-bg="src/img/mulher-de-negocios-inicia-empresario-de-pequenas-empresas-pme-sucesso-mulher-freelance-trabalhando-em-casa-com-entrega-de-encomendas-line-sme-e-conceito-de-entrega-de-embalagens.jpg"></div>
+                    <div class="illust_solucao lazy-bg" id="illust_consumidor" data-bg="src/img/mulher-negocios.webp"></div>
                     <div class="icon_solucao" id="icon_solucao_consumidor"><img src="src/img/checkout.svg" alt="icone de checkin " loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="h3_solucao_text">
@@ -179,14 +182,14 @@
                             <p>Produto com defeito, propaganda enganosa ou venda casada? Não aceite ser desrespeitado. Somos especialistas em fazer as empresas cumprirem a  lei, garantindo a reparação completa do seu dano.</p>
                         </div>
                         <div class="cta_solucao_text">
-                            <a href="https://wa.me/5543991698626?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20exigir%20meus%20direitos%20como%20consumidor." class="link_cta" target="_blank">
+                            <a href="#" onclick="return gtag_report_conversion('https://wa.me/5543991698626');" class="link_cta" target="_blank">
                                 <div class="cta_solucoes" id="cta_consumidor"><strong>Exigir meus direitos</strong><span class="material-symbols-outlined">arrow_right_alt</span></div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="solucao lazy-section" id="solucao_defesa_voos">
-                    <div class="illust_solucao lazy-bg" id="illust_voos" data-bg="src/img/viajante-jovem-com-bagagem-segurando-passaporte-olhar-airplan.jpg"></div>
+                    <div class="illust_solucao lazy-bg" id="illust_voos" data-bg="src/img/viajante-jovem-com-bagagem-segurando-passaporte-olhar-airplan.webp"></div>
                     <div class="icon_solucao" id="icon_solucao_voos"><img src="src/img/aviao.svg" alt="icone de avião" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="h3_solucao_text">
@@ -196,14 +199,14 @@
                             <p>Voo atrasado ou cancelado? Overbooking ou bagagem extraviada? Saiba que essa situação pode gerar direito a uma indenização. Nós avaliamos o seu caso e atuamos para buscar a máxima reparação financeira pelo transtorno.</p>
                         </div>
                         <div class="cta_solucao_text">
-                            <a href="https://wa.me/5543991698626?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20buscar%20reparação." class="link_cta" target="_blank">
+                            <a href="#" onclick="return gtag_report_conversion('https://wa.me/5543991698626');" class="link_cta" target="_blank">
                                 <div class="cta_solucoes" id="cta_voos"><strong>Buscar reparação</strong><span class="material-symbols-outlined">arrow_right_alt</span></div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="solucao lazy-section" id="solucao_inss">
-                    <div class="illust_solucao lazy-bg" id="illust_inss" data-bg="src/img/casal-senior-indiano-asiatico-organizando-ou-empilhando-moedas-em-uma-fileira-foco-seletivo.jpg"></div>
+                    <div class="illust_solucao lazy-bg" id="illust_inss" data-bg="src/img/casal-senior-indiano-asiatico-organizando-ou-empilhando-moedas-em-uma-fileira-foco-seletivo.webp"></div>
                     <div class="icon_solucao" id="icon_solucao_inss"> <img src="src/img/Group.svg" alt="icone de inss" loading="lazy"></div>
                     <div class="text_solucao_container">
                         <div class="" id="h3_s_t_inss">
@@ -213,7 +216,7 @@
                             <p>Dificuldades com o INSS? Atuamos para garantir o BPC/LOAS, auxílio-doença, pensão por morte e todas as modalidades de aposentadoria. Realizamos um diagnóstico dos seus direitos para definir a melhor estratégia e conquistar seu benefício.</p>
                         </div>
                         <div class="cta_solucao_text">
-                            <a href="https://wa.me/5543991698626?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20verificar%20meus%20direitos%20no%20INSS." class="link_cta" target="_blank">
+                            <a href="#" onclick="return gtag_report_conversion('https://wa.me/5543991698626');" class="link_cta" target="_blank">
                                 <div class="cta_solucoes" id="cta_inss"><strong>Verificar meus direitos no INSS</strong><span class="material-symbols-outlined">arrow_right_alt</span></div>
                             </a>
                         </div>
@@ -253,12 +256,12 @@
             </div >
             <div id="apresentacao_imgs">
                 <div id="imgs_apr" class="lazy-section">
-                    <div class="img_apr img_apr_top lazy-bg" data-bg="src/img/familiasorrinmd.jpg" id="img1"></div>
-                    <div class="img_apr img_apr_top lazy-bg" data-bg="src/img/martelo-juiz.jpg" id="img2"></div>
-                    <div class="img_apr lazy-bg" data-bg="src/img/vista-anguo.jpg" id="img3" ></div>
-                    <div class="img_apr lazy-bg" data-bg="src/img/consuta-ref.jpg" id="img4"></div>
-                    <div class="img_apr img_apr_bottom lazy-bg" data-bg="src/img/familia-divertida.jpg" id="img5"></div>
-                    <div class="img_apr img_apr_bottom lazy-bg" data-bg="src/img/advogados.jpg" id="img6"></div>
+                    <div class="img_apr img_apr_top lazy-bg" data-bg="src/img/familiasorrinmd.webp" id="img1"></div>
+                    <div class="img_apr img_apr_top lazy-bg" data-bg="src/img/martelo-juiz.webp" id="img2"></div>
+                    <div class="img_apr lazy-bg" data-bg="src/img/vista-anguo.webp" id="img3" ></div>
+                    <div class="img_apr lazy-bg" data-bg="src/img/consuta-ref.webp" id="img4"></div>
+                    <div class="img_apr img_apr_bottom lazy-bg" data-bg="src/img/familia-divertida.webp" id="img5"></div>
+                    <div class="img_apr img_apr_bottom lazy-bg" data-bg="src/img/advogados.webp" id="img6"></div>
                 </div>
             </div>
         </section>
@@ -293,14 +296,14 @@
                 <div class="advs_cards">
                     <div class="advogado_foto" id="advogado_foto-2">
                         <div class="advogado-info off">
-                            <h4>Pedro Maciel Filho</h4>
-                            <p class="adv-info-p1">Sócio fundador | OAB/PR 102.278</p>
+                            <h4>Laércio de Morais</h4>
+                            <p class="adv-info-p1">Sócio fundador | OAB/PR 104.060</p>
                             <p class="adv-info-p2">Especialista em Direito Corporativo e Processual. É o grande  estrategista, responsável pela execução jurídica do seu caso, elaborando as peças, atuando em audiências e garantindo que cada detalhe seja  cuidadosamente trabalhado para o sucesso da sua causa.</p>
                         </div>
                     </div>
                     <div class="info_footer_advgs">
                         <div class="txts_footer_advs">
-                            <h4>Laércio de Morais</h4>
+                            <h4>Laércio de Morais</h4><!-- modificado 30/10/2025 por: Maicon Vieira-->
                             <p>Sócio fundador | OAB/PR 104.060</p>
                         </div>
                         <div class="icon_footer_advs">
@@ -354,12 +357,10 @@
                 </div>
             </section>
             <section id="contact-section-final">
-
                 <div id="contact-section-texts">
                     <h2 id="h2-contact-section-1">Não deixe seu direito para depois.</h2>
                     <h2 id="h2-contact-section-2">A hora de agir é agora!</h2>
-                    <p>Dê o primeiro passo hoje mesmo para não arriscar perder o seu direito.</p>
-                    
+                    <p>Dê o primeiro passo hoje mesmo para não arriscar perder o seu direito.</p>                    
                     <div id="redes-sociais">
                         <p>Também estamos nas redes sociais:</p>
                         <div id="links-social">
@@ -403,9 +404,9 @@
                 </nav>
                 <div id="footer-contato">
                     <h4>CONTATO</h4>
-                    <a href="#">Av. Ayrton Senna da Silva, 760, Palhano 1, Londrina - PR, 86050-460</a>
-                    <a href="#">(43)99169-8626</a>
-                    <a href="#">contato@macielemoraisadvogados.com.br</a>
+                    <a href="https://maps.google.com/?q=Av.+Ayrton+Senna+da+Silva,+760,+Londrina" target="_blank">Av. Ayrton Senna da Silva, 760, Palhano 1, Londrina - PR, 86050-460</a>
+                    <a href="https://wa.me/5543991698626" target="_blank">(43)99169-8626</a>
+                    <a href="mailto:contato@macielemoraisadvogados.com">contato@macielemoraisadvogados.com</a>
                 </div>
                 <div id="footer-icon">
                     <img src="src/img/logo-white.png" alt="logo da advocacia" loading="lazy">
@@ -417,19 +418,25 @@
             <div id="footer-direitos">
                 <small>© 2025 Maciel e Morais Advogados . Todos os direitos reservados.</small>
             </div>
-
         </footer>
     </main>
-
-
-    <!-- Meta Pixel Code -->
-<script defer>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JY1F865YG7');
+<!-- Event snippet for Clique_Botao_WhatsApp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17665446814/_HZnCI2597sbEJ6nxedB',
+        'event_callback': callback
+    });
+    return false;
+    }
 </script>
-<!-- End Meta Pixel Code -->
+
  <script src="src/js/index.js" defer></script>
 </body>
 </html>
