@@ -172,27 +172,27 @@ seta_baixo_2.addEventListener('click', () =>{
 
 
 //enviar mensagem whatsapp personalizada
-function enviarMSG(){
-    const inputName = document.getElementById('inpt-name').value.trim()
-    const message = document.getElementById('teextarea').value.trim()
+function enviarMSG() {
+    const inputName = document.getElementById('inpt-name').value.trim();
+    const message = document.getElementById('teextarea').value.trim();
 
-    if( !inputName || !message){
-        alert("Preencha o nome e a mensagem")
-        return
+    if (!inputName || !message) {
+        alert("Preencha o nome e a mensagem");
+        return;
     }
-    const meuWhats = "+5543991698626"
-    const  texto = `Olá! Meu nome é ${inputName}. ${message}`
-    const url = `https://wa.me/${meuWhats}?text=${encodeURIComponent(texto)}`
-    
-    // Dispara o pixel (Google Ads ou Meta)
-    if (typeof gtag_report_conversion === "function") {
-        gtag_report_conversion(url)
-    } else {
-        window.open(url, "_blank")
-    }
+
+    const meuWhats = "+5543991698626";
+    const texto = `Olá! Meu nome é ${inputName}. ${message}`;
+    const url = `https://wa.me/${meuWhats}?text=${encodeURIComponent(texto)}`;
+
+    // dispara o pixel e redireciona quando o evento for enviado
+    gtag_report_conversion(url);
+
+    // fallback de segurança caso o callback demore
+    setTimeout(() => {
+        window.open(url, "_blank");
+    }, 500);
 }
-
-
 
 
 //enviar mensagens normais
