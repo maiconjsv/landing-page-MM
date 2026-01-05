@@ -54,8 +54,7 @@
             </div>
             <div id="chat-message-2" class="messages msgOff">
                 <p>Quer falar agora com <strong>um Advogado</strong> pelo WhatsApp?</p>
-                <!--Removido a função sendWhats() para utilizar o do google.-->
-                <button id="btn-chat" onclick="return gtag_report_conversion('https://wa.me/5543991698626');" ><span>Sim, vamos lá!</span> <span class="material-symbols-outlined">arrow_right_alt</span></button>
+                <button id="btn-chat" onclick="return gtag_report_conversion('https://wa.me/5543991698626');""><span>Sim, vamos lá!</span> <span class="material-symbols-outlined">arrow_right_alt</span></button>
             </div>
         </div>
         <div id="aviso_chat">
@@ -420,23 +419,21 @@
             </div>
         </footer>
     </main>
-<!-- Event snippet for Clique_Botao_WhatsApp conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-    var callback = function () {
+<!-- Script do Google Pixel (evento de conversão) -->
+  <script>
+    function gtag_report_conversion(url) {
+        var callback = function () {
         if (typeof(url) != 'undefined') {
-        window.location = url;
+            window.location = url;
         }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17665446814/_HZnCI2597sbEJ6nxedB',
-        'event_callback': callback
-    });
-    return false;
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17665446814/_HZnCI2597sbEJ6nxedB',
+            'event_callback': callback
+        });
+        return false;
     }
-</script>
-
+  </script>
  <script src="src/js/index.js" defer></script>
 </body>
 </html>
